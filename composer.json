@@ -1,0 +1,12 @@
+{
+    "name": "experteam/api-testing-bundle",
+    "description": "Testing functionality bundle for APIs",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Experteam",
+            "email": "info@experteam.com.ec"
+        }
+    ]
+}
