@@ -8,5 +8,15 @@
             "name": "Experteam",
             "email": "info@experteam.com.ec"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "Experteam\\ApiTestingBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Experteam\\ApiTestingBundle\\Tests\\": "tests/"
+        }
+    }
 }
