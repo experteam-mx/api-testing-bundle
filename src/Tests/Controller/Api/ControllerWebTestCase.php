@@ -2,6 +2,8 @@
 
 namespace Experteam\ApiTestingBundle\Tests\Controller\Api;
 
+use Experteam\ApiTestingBundle\Service\MockRedis\MockRedis;
+use Experteam\ApiTestingBundle\Service\MockRedis\MockRedisInterface;
 use Symfony\Bundle\FrameworkBundle\KernelBrowser;
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 use Symfony\Component\HttpClient\MockHttpClient;
@@ -43,7 +45,9 @@ class ControllerWebTestCase extends WebTestCase
             'HTTP_AUTHORIZATION' => 'Bearer 81496|6dKDes8Zcieq6ZnX1ytb2GAxop957X1HbPuczNqG'
         ]);
 
-        $client->getContainer()->set(HttpClientInterface::class, $this->getMockHttpClient($mockResponses));
+        $container = $client->getContainer();
+        $container->set(MockRedisInterface::class, new MockRedis());
+        $container->set(HttpClientInterface::class, $this->getMockHttpClient($mockResponses));
         return $client;
     }
 
