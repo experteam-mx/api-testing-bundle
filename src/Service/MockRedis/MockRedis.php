@@ -56,4 +56,10 @@ class MockRedis extends Redis
     {
         return $this->getValue(__FUNCTION__, $key, $hashKey);
     }
+
+    public function hGetAll($key)
+    {
+        $value = $this->getValue(__FUNCTION__, $key);
+        return (($value === false) ? [] : json_decode($value, true));
+    }
 }
