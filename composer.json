@@ -1,6 +1,7 @@
 {
     "name": "experteam/api-testing-bundle",
     "description": "Testing functionality bundle for APIs",
+    "homepage": "https://github.com/experteam-mx/api-testing-bundle",
     "type": "symfony-bundle",
     "license": "MIT",
     "authors": [
@@ -9,14 +10,28 @@
             "email": "info@experteam.com.ec"
         }
     ],
+    "require": {
+        "php": ">=7.2.5",
+        "ext-json": "*",
+        "experteam/api-base-bundle": "^2.1.1",
+        "experteam/api-redis-bundle": "^2.0.5",
+        "psr/log": "^2",
+        "symfony/config": "5.4.*",
+        "symfony/dependency-injection": "5.4.*",
+        "symfony/framework-bundle": "5.4.*",
+        "symfony/http-client": "5.4.*",
+        "symfony/http-kernel": "5.4.*"
+    },
+    "require-dev": {
+        "symfony/test-pack": "^1.0"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
     "autoload": {
         "psr-4": {
             "Experteam\\ApiTestingBundle\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Experteam\\ApiTestingBundle\\Tests\\": "tests/"
         }
     }
 }

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<container xmlns="http://symfony.com/schema/dic/services" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://symfony.com/schema/dic/services https://symfony.com/schema/dic/services/services-1.0.xsd">
+    <services>
+        <service id="api_testing.mock_redis_client" class="Experteam\ApiTestingBundle\Service\MockRedisClient\MockRedisClient">
+            <argument key="$serializer" type="service" id="Symfony\Component\Serializer\SerializerInterface"/>
+        </service>
+    </services>
+</container>
