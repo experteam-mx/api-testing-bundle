@@ -1,0 +1,26 @@
+{
+	"id": 58,
+	"country_id": 213,
+	"extra_charge_id": 27,
+	"local_name": "Remote Area Pickup",
+	"local_fixed_value": false,
+	"apply_local_rules": false,
+	"explicitly_request": true,
+	"recalculate_fuel_surcharge": true,
+	"required": false,
+	"selected": true,
+	"transmit_to_scl": true,
+	"apply_tax": false,
+	"condition_type": "NA",
+	"shipment_scopes": [
+		1,
+		2,
+		3
+	],
+	"shipment_content_types": [
+		1,
+		2
+	],
+	"created_at": "2022-09-02T23:56:46.623000Z",
+	"updated_at": "2022-09-02T23:56:46.623000Z"
+}

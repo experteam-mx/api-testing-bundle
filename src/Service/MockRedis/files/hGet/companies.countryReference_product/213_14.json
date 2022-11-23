@@ -1,0 +1,28 @@
+{
+	"id": 12,
+	"country_id": 213,
+	"product_id": 14,
+	"local_name": "EXPRESS WORLDWIDE - (WPX)",
+	"min_weight": 0,
+	"max_weight": 999999,
+	"insurance": 0,
+	"business_letter": false,
+	"packaging": true,
+	"anti_drug_letter": false,
+	"max_declared_value": 999999,
+	"shipment_groups": [
+		1,
+		2
+	],
+	"shipment_scopes": [
+		1,
+		2,
+		3
+	],
+	"shipment_content_types": [
+		1,
+		2
+	],
+	"created_at": "2022-09-02T23:56:21.587000Z",
+	"updated_at": "2022-09-02T23:56:21.587000Z"
+}

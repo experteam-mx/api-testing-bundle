@@ -1,0 +1,26 @@
+{
+	"id": 44,
+	"country_id": 213,
+	"extra_charge_id": 10,
+	"local_name": "Extended Liability",
+	"local_fixed_value": false,
+	"apply_local_rules": false,
+	"explicitly_request": true,
+	"recalculate_fuel_surcharge": true,
+	"required": false,
+	"selected": true,
+	"transmit_to_scl": true,
+	"apply_tax": false,
+	"condition_type": "NA",
+	"shipment_scopes": [
+		1,
+		2,
+		3
+	],
+	"shipment_content_types": [
+		1,
+		2
+	],
+	"created_at": "2022-09-02T23:56:46.513000Z",
+	"updated_at": "2022-09-02T23:56:46.513000Z"
+}
