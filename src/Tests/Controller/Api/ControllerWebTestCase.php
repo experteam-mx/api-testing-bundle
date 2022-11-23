@@ -3,7 +3,7 @@
 namespace Experteam\ApiTestingBundle\Tests\Controller\Api;
 
 use Experteam\ApiRedisBundle\Service\RedisClient\RedisClientInterface;
-use Experteam\ApiTestingBundle\Tests\Util\Redis;
+use Experteam\ApiTestingBundle\Tests\Util\Redis\Redis;
 use Symfony\Bundle\FrameworkBundle\KernelBrowser;
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 use Symfony\Component\HttpClient\MockHttpClient;
