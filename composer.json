@@ -13,6 +13,7 @@
     "require": {
         "php": ">=7.2.5",
         "ext-json": "*",
+        "ext-redis": "*",
         "experteam/api-base-bundle": "^2.1.1",
         "experteam/api-redis-bundle": "^2.0.5",
         "psr/log": "^2",
