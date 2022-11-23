@@ -2,8 +2,6 @@
 
 namespace Experteam\ApiTestingBundle\Tests\Controller\Api;
 
-use Experteam\ApiRedisBundle\Service\RedisClient\RedisClientInterface;
-use Experteam\ApiTestingBundle\Tests\Util\Redis\Redis;
 use Symfony\Bundle\FrameworkBundle\KernelBrowser;
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 use Symfony\Component\HttpClient\MockHttpClient;
@@ -39,16 +37,13 @@ class ControllerWebTestCase extends WebTestCase
     protected function getClient(array $mockResponses): KernelBrowser
     {
         $client = self::createClient();
-        $container = $client->getContainer();
-        $redisClient = $container->get(RedisClientInterface::class);
-        $token = Redis::getInstance()->createToken($redisClient);
 
         $client->setServerParameters([
             'HTTP_HOST' => 'localhost:8080',
-            'HTTP_AUTHORIZATION' => "Bearer $token"
+            'HTTP_AUTHORIZATION' => 'Bearer 81496|6dKDes8Zcieq6ZnX1ytb2GAxop957X1HbPuczNqG'
         ]);
 
-        $container->set(HttpClientInterface::class, $this->getMockHttpClient($mockResponses));
+        $client->getContainer()->set(HttpClientInterface::class, $this->getMockHttpClient($mockResponses));
         return $client;
     }
 
