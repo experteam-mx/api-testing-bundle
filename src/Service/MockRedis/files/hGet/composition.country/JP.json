@@ -1,0 +1,29 @@
+{
+	"id": 103,
+	"code": "JP",
+	"name": "JAPAN",
+	"locationType": {
+		"createdAt": "2022-09-02T18:18:44+00:00",
+		"updatedAt": "2022-09-02T18:18:44+00:00",
+		"id": 2,
+		"code": "CP",
+		"name": "City Postcode",
+		"isActive": true,
+		"priority": -1
+	},
+	"unit": {
+		"createdAt": "2022-09-02T18:18:44+00:00",
+		"updatedAt": "2022-09-02T18:22:22+00:00",
+		"id": 2,
+		"name": "Metric",
+		"weight": "kg",
+		"dimension": "cm",
+		"isActive": true
+	},
+	"timezone": "+09:00",
+	"hasImportService": true,
+	"isActive": true,
+	"regions": null,
+	"zones": null,
+	"isoCode": "JPN"
+}

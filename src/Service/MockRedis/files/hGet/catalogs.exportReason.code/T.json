@@ -1,0 +1,19 @@
+{
+	"id": 3,
+	"code": "T",
+	"name": "TEMPORARY",
+	"description": "Temporary Export - Shipments that will be returning back to Shipper. EG - ATA Carnet - tradeshow booth and event gear that will be shipped temporarily to the destination, used, and then shipped back when the show is finished. Must include information that the package is expected to be returned (or will leave the country) so include an expected return date on commercial invoice. Note: the preferential tarrif rate or clearance method around temporary imports is not always available.",
+	"isActive": false,
+	"createdAt": "2022-09-02T18:22:35+00:00",
+	"updatedAt": "2022-09-02T23:48:55+00:00",
+	"translations": {
+		"name": {
+			"EN": "TEMPORARY",
+			"ES": "TEMPORAL"
+		},
+		"description": {
+			"EN": "Temporary Export - Shipments that will be returning back to Shipper. EG - ATA Carnet - tradeshow booth and event gear that will be shipped temporarily to the destination, used, and then shipped back when the show is finished. Must include information that the package is expected to be returned (or will leave the country) so include an expected return date on commercial invoice. Note: the preferential tarrif rate or clearance method around temporary imports is not always available.",
+			"ES": "Exportación Temporal - Envíos que regresarán al Remitente. EG - ATA Carnet - stand de feria comercial y equipo para eventos que se enviarán temporalmente al destino, se usarán y luego se enviarán de vuelta cuando finalice la feria. Debe incluir información de que se espera que el paquete sea devuelto (o saldrá del país), así que incluya una fecha de devolución prevista en la factura comercial. Nota: la tasa arancelaria preferencial o el método de despacho en torno a las importaciones temporales no siempre está disponible."
+		}
+	}
+}

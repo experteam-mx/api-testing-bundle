@@ -1,0 +1,19 @@
+{
+	"id": 9,
+	"code": "G",
+	"name": "GIFT",
+	"description": "Any shipment containing articles to be given as an unsolicited gift, from one private individual to another private individual, which are not being shipped by a business nor consigned to a business. Goods Description should include the wording \"unsolicited gift\" and to have the word \"Gift\" somewhere in the Detailed Description of Goods.",
+	"isActive": true,
+	"createdAt": "2022-09-02T18:22:35+00:00",
+	"updatedAt": "2022-09-02T23:48:55+00:00",
+	"translations": {
+		"name": {
+			"EN": "GIFT",
+			"ES": "REGALO"
+		},
+		"description": {
+			"EN": "Any shipment containing articles to be given as an unsolicited gift, from one private individual to another private individual, which are not being shipped by a business nor consigned to a business. Goods Description should include the wording \"unsolicited gift\" and to have the word \"Gift\" somewhere in the Detailed Description of Goods.",
+			"ES": "Todo envío que contenga artículos para ser entregados como obsequio no solicitado, de un particular a otro particular, que no estén siendo enviados por una empresa ni consignados a una empresa. La descripción de los bienes debe incluir la frase \"obsequio no solicitado\" y tener la palabra \"obsequio\" en algún lugar de la descripción detallada de los bienes."
+		}
+	}
+}

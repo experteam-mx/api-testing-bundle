@@ -1,0 +1,19 @@
+{
+	"id": 4,
+	"code": "M",
+	"name": "USED EXIBITION GOODS TO ORIGIN",
+	"description": "Used Exhibition Goods To Origin",
+	"isActive": false,
+	"createdAt": "2022-09-02T18:22:35+00:00",
+	"updatedAt": "2022-09-02T23:48:55+00:00",
+	"translations": {
+		"name": {
+			"EN": "USED EXIBITION GOODS TO ORIGIN",
+			"ES": "BIENES DE EXPOSICIÓN USADOS EN ORIGEN"
+		},
+		"description": {
+			"EN": "Used Exhibition Goods To Origin",
+			"ES": "Mercancías de exposición usadas hasta el origen"
+		}
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"id": 11,
+	"code": "W",
+	"name": "WARRANTY REPLACEMENT",
+	"description": "2 options: 1) Shipper (Customer) sending a shipment for repair; or, 2) Shipper has repaired the item and are shipping it back to customer. If either of those are true = Repair / Warranty as Reason for Export. If sending a shipment for repair (#1 above) - should make clear that the shipment is going FOR REPAIR or Warranty replacement on commercial invoice in General Description. If goods have been fixed/repaired and are being returned to customer, must include the market value/purchase value of the shipment along with the repair cost.",
+	"isActive": false,
+	"createdAt": "2022-09-02T18:22:35+00:00",
+	"updatedAt": "2022-09-02T23:48:55+00:00",
+	"translations": {
+		"name": {
+			"EN": "WARRANTY REPLACEMENT",
+			"ES": "GARANTÍA DE REMPLAZO"
+		},
+		"description": {
+			"EN": "2 options: 1) Shipper (Customer) sending a shipment for repair; or, 2) Shipper has repaired the item and are shipping it back to customer. If either of those are true = Repair / Warranty as Reason for Export. If sending a shipment for repair (#1 above) - should make clear that the shipment is going FOR REPAIR or Warranty replacement on commercial invoice in General Description. If goods have been fixed/repaired and are being returned to customer, must include the market value/purchase value of the shipment along with the repair cost.",
+			"ES": "2 opciones: 1) Shipper (Cliente) enviando un envío para reparación; o 2) El remitente reparó el artículo y lo está devolviendo al cliente. Si alguno de ellos es cierto = Reparación/Garantía como motivo de exportación. Si envía un envío para reparación (n.º 1 anterior), debe dejar en claro que el envío va PARA REPARACIÓN o reemplazo bajo garantía en la factura comercial en la Descripción general. Si los bienes han sido arreglados/reparados y están siendo devueltos al cliente, debe incluir el valor de mercado/valor de compra del envío junto con el costo de reparación."
+		}
+	}
+}

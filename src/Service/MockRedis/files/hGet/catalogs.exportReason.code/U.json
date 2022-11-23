@@ -1,0 +1,19 @@
+{
+	"id": 10,
+	"code": "U",
+	"name": "RETURN TO ORIGIN",
+	"description": "If shipment was temporarily exported and is now being returned back. Must include tracking number of the original shipment as well as the original arrival date into the country on commercial invoice.",
+	"isActive": false,
+	"createdAt": "2022-09-02T18:22:35+00:00",
+	"updatedAt": "2022-09-02T23:48:55+00:00",
+	"translations": {
+		"name": {
+			"EN": "RETURN TO ORIGIN",
+			"ES": "VOLVER AL ORIGEN"
+		},
+		"description": {
+			"EN": "If shipment was temporarily exported and is now being returned back. Must include tracking number of the original shipment as well as the original arrival date into the country on commercial invoice.",
+			"ES": "Si el envío se exportó temporalmente y ahora se devuelve. Debe incluir el número de seguimiento del envío original, así como la fecha original de llegada al país en la factura comercial."
+		}
+	}
+}
