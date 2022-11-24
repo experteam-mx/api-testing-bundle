@@ -2,13 +2,13 @@
 
 namespace Experteam\ApiTestingBundle\Tests\Controller\Api;
 
+use Experteam\ApiTestingBundle\Service\MockHttpClientInterface;
 use Experteam\ApiTestingBundle\Service\MockRedis\MockRedis;
 use Experteam\ApiTestingBundle\Service\MockRedis\MockRedisInterface;
 use Symfony\Bundle\FrameworkBundle\KernelBrowser;
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 use Symfony\Component\HttpClient\MockHttpClient;
 use Symfony\Component\HttpClient\Response\MockResponse;
-use Symfony\Contracts\HttpClient\HttpClientInterface;
 
 class ControllerWebTestCase extends WebTestCase
 {
@@ -34,20 +34,21 @@ class ControllerWebTestCase extends WebTestCase
 
     /**
      * @param array $mockResponses
+     * @param string $token
      * @return KernelBrowser
      */
-    protected function getClient(array $mockResponses): KernelBrowser
+    protected function getClient(array $mockResponses, string $token = '81496|6dKDes8Zcieq6ZnX1ytb2GAxop957X1HbPuczNqG'): KernelBrowser
     {
         $client = self::createClient();
 
         $client->setServerParameters([
             'HTTP_HOST' => 'localhost:8080',
-            'HTTP_AUTHORIZATION' => 'Bearer 81496|6dKDes8Zcieq6ZnX1ytb2GAxop957X1HbPuczNqG'
+            'HTTP_AUTHORIZATION' => "Bearer $token"
         ]);
 
         $container = $client->getContainer();
         $container->set(MockRedisInterface::class, new MockRedis());
-        $container->set(HttpClientInterface::class, $this->getMockHttpClient($mockResponses));
+        $container->set(MockHttpClientInterface::class, $this->getMockHttpClient($mockResponses));
         return $client;
     }
 
