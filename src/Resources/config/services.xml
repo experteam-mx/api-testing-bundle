@@ -3,5 +3,10 @@
     <services>
         <service id="Experteam\ApiTestingBundle\Service\MockRedis\MockRedisInterface" alias="Redis" public="true"/>
         <service id="Experteam\ApiTestingBundle\Service\MockHttpClientInterface" alias="Symfony\Contracts\HttpClient\HttpClientInterface" public="true"/>
+
+        <service id="api_testing.test_data" class="Experteam\ApiTestingBundle\Service\TestData\TestData" public="true">
+            <argument key="$parameterBag" type="service" id="Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface"/>
+        </service>
+        <service id="Experteam\ApiTestingBundle\Service\TestData\TestDataInterface" alias="api_testing.test_data"/>
     </services>
 </container>
