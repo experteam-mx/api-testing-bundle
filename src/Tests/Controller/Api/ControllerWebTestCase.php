@@ -5,67 +5,96 @@ namespace Experteam\ApiTestingBundle\Tests\Controller\Api;
 use Experteam\ApiTestingBundle\Service\MockHttpClientInterface;
 use Experteam\ApiTestingBundle\Service\MockRedis\MockRedis;
 use Experteam\ApiTestingBundle\Service\MockRedis\MockRedisInterface;
+use Experteam\ApiTestingBundle\Service\TestData\TestData;
 use Symfony\Bundle\FrameworkBundle\KernelBrowser;
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpClient\MockHttpClient;
 use Symfony\Component\HttpClient\Response\MockResponse;
 
 class ControllerWebTestCase extends WebTestCase
 {
     /**
-     * @param array $mockResponses
+     * @var string
+     */
+    public string $testClass;
+
+    /**
+     * @var string
+     */
+    public string $testFunction;
+
+    /**
+     * @var KernelBrowser
+     */
+    public KernelBrowser $client;
+
+    /**
+     * @var ContainerInterface
+     */
+    public ContainerInterface $testContainer;
+
+    /**
+     * @var TestData|null
+     */
+    public ?TestData $testData;
+
+    /**
+     * @param array|null $mockResponses
      * @return MockHttpClient
      */
-    private function getMockHttpClient(array $mockResponses): MockHttpClient
+    private function getMockHttpClient(?array $mockResponses): MockHttpClient
     {
         $responses = [];
 
-        foreach ($mockResponses as $mockResponse) {
-            $responses[] = new MockResponse(json_encode($mockResponse), [
-                'http_code' => 200,
-                'response_headers' => [
-                    'Content-Type: application/json'
-                ]
-            ]);
+        if (!is_null($mockResponses)) {
+            foreach ($mockResponses as $mockResponse) {
+                $responses[] = new MockResponse(json_encode($mockResponse), [
+                    'http_code' => 200,
+                    'response_headers' => [
+                        'Content-Type: application/json'
+                    ]
+                ]);
+            }
         }
 
         return new MockHttpClient($responses);
     }
 
     /**
-     * @param array $mockResponses
+     * @param string $testClass
+     * @param string $testFunction
      * @param string $token
-     * @return KernelBrowser
      */
-    protected function getClient(array $mockResponses, string $token = '81496|6dKDes8Zcieq6ZnX1ytb2GAxop957X1HbPuczNqG'): KernelBrowser
+    protected function init(string $testClass, string $testFunction, string $token = '81496|6dKDes8Zcieq6ZnX1ytb2GAxop957X1HbPuczNqG')
     {
-        $client = self::createClient();
+        $this->testClass = $testClass;
+        $this->testFunction = $testFunction;
+        $this->client = self::createClient();
 
-        $client->setServerParameters([
+        $this->client->setServerParameters([
             'HTTP_HOST' => 'localhost:8080',
             'HTTP_AUTHORIZATION' => "Bearer $token"
         ]);
 
-        $container = $client->getContainer();
-        $container->set(MockRedisInterface::class, new MockRedis());
-        $container->set(MockHttpClientInterface::class, $this->getMockHttpClient($mockResponses));
-        return $client;
+        $this->testContainer = $this->client->getContainer();
+        $this->testContainer->set(MockRedisInterface::class, new MockRedis());
+        $this->testData = $this->testContainer->get('api_testing.test_data');
+        $mockResponses = $this->testData->getValue($this->testClass, $this->testFunction, 'mock-responses');
+        $this->testContainer->set(MockHttpClientInterface::class, $this->getMockHttpClient($mockResponses));
     }
 
-    protected function commonAssertions(KernelBrowser $client)
+    protected function commonAssertions()
     {
         $this->assertResponseStatusCodeSame(200);
         $this->assertResponseHeaderSame('Content-Type', 'application/json');
-        $this->assertJson($client->getResponse()->getContent());
+        $this->assertJson($this->client->getResponse()->getContent());
     }
 
-    /**
-     * @param array $response
-     * @param KernelBrowser $client
-     */
-    protected function assertEqualResponses(array $response, KernelBrowser $client)
+    protected function assertEqualResponses()
     {
-        $this->assertEquals(json_encode($response), $client->getResponse()->getContent());
+        $response = $this->testData->getValue($this->testClass, $this->testFunction, 'response');
+        $this->assertEquals(json_encode($response), $this->client->getResponse()->getContent());
     }
 
     /**
