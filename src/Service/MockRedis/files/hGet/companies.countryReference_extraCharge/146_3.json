@@ -1,0 +1,26 @@
+{
+	"id": 10017,
+	"country_id": 146,
+	"extra_charge_id": 3,
+	"local_name": null,
+	"local_fixed_value": false,
+	"apply_local_rules": false,
+	"explicitly_request": false,
+	"recalculate_fuel_surcharge": true,
+	"required": true,
+	"selected": true,
+	"transmit_to_scl": true,
+	"apply_tax": false,
+	"condition_type": "NA",
+	"shipment_scopes": [
+		1,
+		2,
+		3
+	],
+	"shipment_content_types": [
+		1,
+		2
+	],
+	"created_at": "2022-12-12T17:17:52.177000Z",
+	"updated_at": "2022-12-12T17:17:52.177000Z"
+}

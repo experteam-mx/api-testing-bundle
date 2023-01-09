@@ -1,0 +1,10 @@
+{
+	"id": 2,
+	"number": "CASHMX004",
+	"created_at": "2022-09-02T21:35:14.487000Z",
+	"updated_at": "2022-09-02T21:42:27.660000Z",
+	"account_type_id": 1,
+	"description": "CASH RETAIL AHM",
+	"country_id": 146,
+	"domestic_approved": false
+}

@@ -1,0 +1,31 @@
+{
+	"country_id": 146,
+	"decimal_point": 2,
+	"use_billing": true,
+	"use_payments": true,
+	"is_active": true,
+	"created_at": "2022-09-02T21:35:14.117000Z",
+	"updated_at": "2022-12-12T17:17:01.278000Z",
+	"currency_id": 88,
+	"language_id": 1,
+	"decimal_separator": ".",
+	"thousands_separator": ",",
+	"restricted_import_countries": [
+		28,
+		65,
+		94,
+		112,
+		170,
+		184,
+		188,
+		202,
+		216,
+		232
+	],
+	"max_quantity_document_piece": 0,
+	"max_quantity_package_piece": 0,
+	"weight_restriction_piece": 0,
+	"restriction_shipment": 0,
+	"restriction_dimension": 0,
+	"max_declared_value": 0
+}

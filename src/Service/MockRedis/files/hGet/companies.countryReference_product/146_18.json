@@ -1,0 +1,24 @@
+{
+	"id": 10018,
+	"country_id": 146,
+	"product_id": 18,
+	"local_name": null,
+	"min_weight": 0.5,
+	"max_weight": 99999,
+	"insurance": 2,
+	"business_letter": true,
+	"packaging": true,
+	"anti_drug_letter": true,
+	"max_declared_value": 99999999,
+	"shipment_groups": [
+		2
+	],
+	"shipment_scopes": [
+		2
+	],
+	"shipment_content_types": [
+		2
+	],
+	"created_at": "2022-11-18T16:59:39.287000Z",
+	"updated_at": "2022-11-18T16:59:39.287000Z"
+}
