@@ -67,4 +67,17 @@ class MockRedis extends Redis
     {
         return json_encode($this->getValue(__FUNCTION__, $key))['value'] ?? null;
     }
+
+    public function keys($pattern)
+    {
+        $keys = json_encode($this->getValue(__FUNCTION__, __FUNCTION__))[__FUNCTION__] ?? [];
+
+        return array_filter($keys, function ($k) use ($pattern) {
+            $pattern = preg_replace_callback('/([^*])/', function($m) {
+                return preg_quote($m[0], '/');
+            }, $pattern);
+            $pattern = str_replace('*', '.*', $pattern);
+            return (bool) preg_match('/^' . $pattern . '$/i', $k);
+        });
+    }
 }
