@@ -62,4 +62,9 @@ class MockRedis extends Redis
         $value = $this->getValue(__FUNCTION__, $key);
         return (($value === false) ? [] : json_decode($value, true));
     }
+
+    public function incr($key)
+    {
+        return json_encode($this->getValue(__FUNCTION__, $key))['value'] ?? null;
+    }
 }
