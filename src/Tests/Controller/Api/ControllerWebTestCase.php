@@ -84,9 +84,9 @@ class ControllerWebTestCase extends WebTestCase
         $this->testContainer->set(MockHttpClientInterface::class, $this->getMockHttpClient($mockResponses));
     }
 
-    protected function commonAssertions()
+    protected function commonAssertions(int $statusCode = 200)
     {
-        $this->assertResponseStatusCodeSame(200);
+        $this->assertResponseStatusCodeSame($statusCode);
         $this->assertResponseHeaderSame('Content-Type', 'application/json');
         $this->assertJson($this->client->getResponse()->getContent());
     }
