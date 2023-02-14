@@ -3,6 +3,7 @@
 namespace Experteam\ApiTestingBundle\Service\MockRedis;
 
 use Redis;
+use Snc\RedisBundle\DependencyInjection\Configuration\RedisDsn;
 use Symfony\Component\Filesystem\Filesystem;
 
 class MockRedis extends Redis
@@ -65,7 +66,9 @@ class MockRedis extends Redis
 
     public function incr($key)
     {
-        return json_decode($this->getValue(__FUNCTION__, $key), true)['value'] ?? null;
+        $dsn = new RedisDsn($_ENV['REDIS_URL'] ?? '');
+        parent::connect($dsn->getHost(), $dsn->getPort(), 5, $dsn->getPersistentId(), 5, 5);
+        return parent::incr($key);
     }
 
     public function keys($pattern)
