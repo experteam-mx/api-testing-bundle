@@ -26,5 +26,6 @@
 	"locker_enabled": false,
 	"management_area_id": null,
 	"queue_manager_enabled": false,
+	"facility_id": "PHL001",
 	"supervisor": null
 }
