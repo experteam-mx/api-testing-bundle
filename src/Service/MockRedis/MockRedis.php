@@ -83,4 +83,14 @@ class MockRedis extends Redis
             return (bool) preg_match('/^' . $pattern . '$/i', $k);
         });
     }
+
+    public function set($key, $value, $timeout = null)
+    {
+        //Do nothing
+    }
+
+    public function hSet($key, $hashKey, $value)
+    {
+        //Do nothing
+    }
 }
