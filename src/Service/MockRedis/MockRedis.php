@@ -93,4 +93,9 @@ class MockRedis extends Redis
     {
         //Do nothing
     }
+
+    public function expire($key, $ttl)
+    {
+        //Do nothing
+    }
 }
