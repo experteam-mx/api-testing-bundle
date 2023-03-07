@@ -1,0 +1,100 @@
+{
+    "account": {
+        "countryCode": "US",
+        "isCash": false,
+        "number": "850925434"
+    },
+    "amount": {
+        "declared": 0,
+        "declaredCurrency": "",
+        "insured": 0,
+        "insuredCurrency": "",
+        "prePaid": 37.47,
+        "prePaidCurrency": "USD"
+    },
+    "deliveryDate": {
+        "date": "2023-02-28T23:59:00",
+        "gmtOffset": "+00:00",
+        "typeCode": "QDDF"
+    },
+    "description": "test",
+    "destination": {
+        "addressLines": {
+            "1": "direccion destino",
+            "2": "NV",
+            "3": "LAS VEGAS"
+        },
+        "businessName": "destino",
+        "city": "LAS VEGAS",
+        "contactName": "CONTACTO DESTINO",
+        "countryCode": "US",
+        "countryName": "UNITED STATES OF AMERICA",
+        "email": "crasupport@experteam.com.ec",
+        "facilityCode": "LAS",
+        "mobileNumber": "",
+        "phoneNumber": "+1(201) 555-2365",
+        "postalCode": "89109",
+        "serviceAreaCode": "LAS",
+        "suburb": "LAS"
+    },
+    "events": [],
+    "isDocument": true,
+    "labeless": false,
+    "origin": {
+        "addressLines": {
+            "1": "direccion gaby",
+            "2": "AZ",
+            "3": "TEMPE"
+        },
+        "businessName": "gabriela",
+        "city": "TEMPE",
+        "contactName": "CONTACTO GABRIELA",
+        "countryCode": "US",
+        "countryName": "UNITED STATES OF AMERICA",
+        "email": "gabriela.duque@experteam.com.ec",
+        "facilityCode": "PHX",
+        "mobileNumber": "",
+        "phoneNumber": "+1(201) 555-2365",
+        "postalCode": "85281",
+        "serviceAreaCode": "PHX",
+        "suburb": "LAS"
+    },
+    "packages": [
+        {
+            "depth": 2.54,
+            "depthUnit": "IN",
+            "height": 2.54,
+            "heightUnit": "IN",
+            "trackingNumber": "JD014600004645440371",
+            "weight": 0.45,
+            "weightUnit": "LB",
+            "width": 2.54,
+            "widthUnit": "IN"
+        }
+    ],
+    "product": {
+        "contentCode": "DOM",
+        "globalCode": "N",
+        "globalName": "EXPRESS DOMESTIC - (DOM)",
+        "localCode": "N",
+        "localName": "EXPRESS DOMESTIC - (DOM)"
+    },
+    "reference": "CC 37.47",
+    "results": 1,
+    "retrieveFrom": "shipment-query",
+    "scope": "Domestic",
+    "services": [
+        "FF"
+    ],
+    "shipmentDate": {
+        "date": "2023-02-27T16:39:25",
+        "gmtOffset": "-04:00"
+    },
+    "shipmentQueryAdv": false,
+    "trackingNumber": "4885191393",
+    "transactionId": "47b1fd40-b77c-11ed-97e8-a7cbfa3b7ad6",
+    "volumetricWeight": 0.007,
+    "volumetricWeightUnit": "Lb",
+    "weight": 1,
+    "weightUnit": "Lb"
+}
