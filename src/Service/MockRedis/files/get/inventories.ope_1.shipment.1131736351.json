@@ -1,0 +1,84 @@
+{
+  "shipmentQueryAdv": false,
+  "trackingNumber": "1131736351",
+  "date": "2023-02-02T20:43:25",
+  "results": 1,
+  "isDocument": null,
+  "scope": "Domestic",
+  "accountNumber": "850925434",
+  "description": "test",
+  "reference": "MO 38.05",
+  "amount": 38.05,
+  "insuredAmount": 0,
+  "currency": "USD",
+  "weight": 1,
+  "weightUnit": "Lb",
+  "product": {
+    "globalCode": "N",
+    "localCode": "N",
+    "localName": "EXPRESS DOMESTIC",
+    "contentCode": "DOM"
+  },
+  "origin": {
+    "phoneNumber": "+1(201) 555-2365",
+    "email": "gabriela.duque@experteam.com.ec",
+    "postalCode": "85281",
+    "suburb": "LAS",
+    "city": "TEMPE",
+    "countryCode": "US",
+    "countryName": "UNITED STATES OF AMERICA",
+    "businessName": "gabriela",
+    "contactName": "TEST",
+    "addressLines": {
+      "1": "sssss",
+      "2": "AZ",
+      "3": "TEMPE"
+    },
+    "facilityCode": "PHX",
+    "serviceAreaCode": "PHX"
+  },
+  "destination": {
+    "phoneNumber": "+1(201) 555-2365",
+    "email": "rwar@test.com",
+    "postalCode": "89110",
+    "suburb": "LAS",
+    "city": "LAS VEGAS",
+    "countryCode": "US",
+    "countryName": "UNITED STATES OF AMERICA",
+    "businessName": "test",
+    "contactName": "TEST",
+    "addressLines": {
+      "1": "tset",
+      "2": "NV",
+      "3": "LAS VEGAS"
+    },
+    "facilityCode": "LAS",
+    "serviceAreaCode": "LAS"
+  },
+  "packages": [
+    {
+      "trackingNumber": "JD014600004642001837",
+      "weight": 0.45,
+      "height": 2.54,
+      "depth": 2.54,
+      "width": 2.54,
+      "events": [
+        {
+          "checkpoint": "SA",
+          "remark": "RETAIL",
+          "date": "2023-02-02T20:45:43",
+          "gmtOffset": "+00:00"
+        }
+      ]
+    }
+  ],
+  "transactionId": "3299e26a-bdfd-11ed-a6b1-9b5d687a3713",
+  "events": [
+    {
+      "checkpoint": "SA",
+      "remark": "",
+      "date": "2023-02-03T03:45:00",
+      "gmtOffset": "-07:00"
+    }
+  ]
+}
