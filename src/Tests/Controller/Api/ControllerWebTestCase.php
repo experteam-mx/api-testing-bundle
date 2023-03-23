@@ -70,7 +70,7 @@ class ControllerWebTestCase extends WebTestCase
     {
         $this->testClass = $testClass;
         $this->testFunction = $testFunction;
-        $this->client = self::createClient();
+        $this->client = static::createClient();
 
         $this->client->setServerParameters([
             'HTTP_HOST' => 'localhost:8080',
