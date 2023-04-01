@@ -4,6 +4,7 @@ namespace Experteam\ApiTestingBundle\Service\MockRedis;
 
 use Redis;
 use Snc\RedisBundle\DependencyInjection\Configuration\RedisDsn;
+use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
 use Symfony\Component\Filesystem\Filesystem;
 
 class MockRedis extends Redis
@@ -18,11 +19,14 @@ class MockRedis extends Redis
      */
     private Filesystem $filesystem;
 
-    public function __construct()
+    /**
+     * @param ParameterBagInterface $parameterBag
+     */
+    public function __construct(ParameterBagInterface $parameterBag)
     {
         parent::__construct();
-        $this->filesDir = __DIR__ . '/files';
         $this->filesystem = new Filesystem();
+        $this->filesDir = $parameterBag->get('kernel.project_dir') . '/vendor/experteam/api-testing-bundle/data/redis-mock';
     }
 
     /**
@@ -31,7 +35,7 @@ class MockRedis extends Redis
      * @param string|null $hashKey
      * @return string|false
      */
-    private function getValue(string $function, string $key, ?string $hashKey = null)
+    private function getValue(string $function, string $key, ?string $hashKey = null): string|false
     {
         $filePath = "{$this->filesDir}/$function/" . str_replace([':', '|'], ['_', '-'], $key);
 

@@ -3,9 +3,9 @@
 namespace Experteam\ApiTestingBundle\Tests\Controller\Api;
 
 use Experteam\ApiTestingBundle\Service\MockHttpClientInterface;
-use Experteam\ApiTestingBundle\Service\MockRedis\MockRedis;
-use Experteam\ApiTestingBundle\Service\MockRedis\MockRedisInterface;
 use Experteam\ApiTestingBundle\Service\TestData\TestData;
+use Experteam\ApiTestingBundle\Utils\RedisData;
+use Redis;
 use Symfony\Bundle\FrameworkBundle\KernelBrowser;
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 use Symfony\Component\DependencyInjection\ContainerInterface;
@@ -38,6 +38,33 @@ class ControllerWebTestCase extends WebTestCase
      * @var TestData|null
      */
     public ?TestData $testData;
+
+    /**
+     * @var bool
+     */
+    private bool $useRedisMock = false;
+
+    /**
+     * @var RedisData
+     */
+    private RedisData $redisData;
+
+    /**
+     * @return bool
+     */
+    public function isUseRedisMock(): bool
+    {
+        return $this->useRedisMock;
+    }
+
+    /**
+     * @param RedisData $redisData
+     */
+    public function setUseRedisMock(RedisData $redisData): void
+    {
+        $this->useRedisMock = true;
+        $this->redisData = $redisData;
+    }
 
     /**
      * @param array|null $mockResponses
@@ -78,10 +105,17 @@ class ControllerWebTestCase extends WebTestCase
         ]);
 
         $this->testContainer = $this->client->getContainer();
-        $this->testContainer->set(MockRedisInterface::class, new MockRedis());
         $this->testData = $this->testContainer->get('api_testing.test_data');
         $mockResponses = $this->testData->getValue($this->testClass, $this->testFunction, 'mock-responses');
         $this->testContainer->set(MockHttpClientInterface::class, $this->getMockHttpClient($mockResponses));
+
+        if (!$this->isUseRedisMock()) {
+            $this->testContainer->set(Redis::class, $this->testContainer->get('api_testing.mock_redis'));
+        } else {
+            $redisMock = $this->createMock(Redis::class);
+            $this->testContainer->get('api_testing.redis_mock')->init($redisMock, $this->redisData);
+            $this->testContainer->set(Redis::class, $redisMock);
+        }
     }
 
     protected function commonAssertions(int $statusCode = 200)
@@ -107,12 +141,8 @@ class ControllerWebTestCase extends WebTestCase
         foreach ($keys as $key) {
             $this->assertArrayHasKey($key, $array);
 
-            if (!is_null($keysType)) {
-                switch ($keysType) {
-                    case 'int':
-                        $this->assertIsInt($array[$key]);
-                        break;
-                }
+            if ($keysType === 'int') {
+                $this->assertIsInt($array[$key]);
             }
         }
     }
