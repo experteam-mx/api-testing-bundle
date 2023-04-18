@@ -50,6 +50,11 @@ class ControllerWebTestCase extends WebTestCase
     private RedisData $redisData;
 
     /**
+     * @var bool
+     */
+    private bool $contentTypeIsJson = true;
+
+    /**
      * @return bool
      */
     public function isUseRedisMock(): bool
@@ -76,12 +81,15 @@ class ControllerWebTestCase extends WebTestCase
 
         if (!is_null($mockResponses)) {
             foreach ($mockResponses as $mockResponse) {
-                $responses[] = new MockResponse(json_encode($mockResponse), [
-                    'http_code' => 200,
-                    'response_headers' => [
-                        'Content-Type: application/json'
-                    ]
-                ]);
+                $body = $mockResponse;
+                $info = ['http_code' => 200];
+
+                if ($this->contentTypeIsJson) {
+                    $body = json_encode($mockResponse);
+                    $info['response_headers'] = ['Content-Type: application/json'];
+                }
+
+                $responses[] = new MockResponse($body, $info);
             }
         }
 
@@ -89,11 +97,28 @@ class ControllerWebTestCase extends WebTestCase
     }
 
     /**
+     * @return bool
+     */
+    public function isContentTypeIsJson(): bool
+    {
+        return $this->contentTypeIsJson;
+    }
+
+    /**
+     * @param bool $contentTypeIsJson
+     */
+    public function setContentTypeIsJson(bool $contentTypeIsJson): void
+    {
+        $this->contentTypeIsJson = $contentTypeIsJson;
+    }
+
+    /**
      * @param string $testClass
      * @param string $testFunction
      * @param string $token
+     * @return void
      */
-    protected function init(string $testClass, string $testFunction, string $token = '81496|6dKDes8Zcieq6ZnX1ytb2GAxop957X1HbPuczNqG')
+    protected function init(string $testClass, string $testFunction, string $token = '81496|6dKDes8Zcieq6ZnX1ytb2GAxop957X1HbPuczNqG'): void
     {
         $this->testClass = $testClass;
         $this->testFunction = $testFunction;
@@ -118,14 +143,21 @@ class ControllerWebTestCase extends WebTestCase
         }
     }
 
-    protected function commonAssertions(int $statusCode = 200)
+    /**
+     * @param int $statusCode
+     * @return void
+     */
+    protected function commonAssertions(int $statusCode = 200): void
     {
         $this->assertResponseStatusCodeSame($statusCode);
         $this->assertResponseHeaderSame('Content-Type', 'application/json');
         $this->assertJson($this->client->getResponse()->getContent());
     }
 
-    protected function assertEqualResponses()
+    /**
+     * @return void
+     */
+    protected function assertEqualResponses(): void
     {
         $response = $this->testData->getValue($this->testClass, $this->testFunction, 'response');
         $this->assertEquals(json_encode($response), $this->client->getResponse()->getContent());
@@ -135,8 +167,9 @@ class ControllerWebTestCase extends WebTestCase
      * @param array $array
      * @param array $keys
      * @param string|null $keysType
+     * @return void
      */
-    protected function assertArrayHasKeys(array $array, array $keys, string $keysType = null)
+    protected function assertArrayHasKeys(array $array, array $keys, string $keysType = null): void
     {
         foreach ($keys as $key) {
             $this->assertArrayHasKey($key, $array);
@@ -151,8 +184,9 @@ class ControllerWebTestCase extends WebTestCase
      * @param array $expectedResponse
      * @param array $actualResponse
      * @param array $keys
+     * @return void
      */
-    protected function assertEqualPartialResponses(array $expectedResponse, array $actualResponse, array $keys)
+    protected function assertEqualPartialResponses(array $expectedResponse, array $actualResponse, array $keys): void
     {
         foreach ($keys as $key) {
             unset($actualResponse[$key]);
