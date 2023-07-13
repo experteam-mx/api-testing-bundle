@@ -1,7 +1,8 @@
 {
-	"id": 59,
-	"code": "DD",
-	"name": "Duty Tax Paid",
-	"createdAt": "2022-09-02T18:22:35+00:00",
-	"updatedAt": "2022-09-02T18:22:35+00:00"
+  "id": 59,
+  "code": "DD",
+  "name": "Duty Tax Paid",
+  "isDiscount": false,
+  "createdAt": "2022-09-02T18:22:35+00:00",
+  "updatedAt": "2022-09-02T18:22:35+00:00"
 }
