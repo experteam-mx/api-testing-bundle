@@ -1,7 +1,8 @@
 {
-	"id": 158,
-	"code": "WW",
-	"name": "Duty Tax Receiver",
-	"createdAt": "2022-09-02T18:22:35+00:00",
-	"updatedAt": "2022-09-02T18:22:35+00:00"
+  "id": 158,
+  "code": "WW",
+  "name": "Duty Tax Receiver",
+  "isDiscount": false,
+  "createdAt": "2022-09-02T18:22:35+00:00",
+  "updatedAt": "2022-09-02T18:22:35+00:00"
 }

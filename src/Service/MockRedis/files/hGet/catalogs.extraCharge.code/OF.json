@@ -1,7 +1,8 @@
 {
-	"id": 111,
-	"code": "OF",
-	"name": "Remote Area",
-	"createdAt": "2022-09-02T18:22:35+00:00",
-	"updatedAt": "2022-09-02T18:22:35+00:00"
+  "id": 111,
+  "code": "OF",
+  "name": "Remote Area",
+  "isDiscount": false,
+  "createdAt": "2022-09-02T18:22:35+00:00",
+  "updatedAt": "2022-09-02T18:22:35+00:00"
 }
