@@ -337,7 +337,22 @@
     "catalogs_questions_get_all",
     "catalogs_questions_get",
     "pickups_country_damaged_delivered_events_get_all",
-    "pickups_country_damaged_delivered_events_get"
+    "pickups_country_damaged_delivered_events_get",
+    "cash_operations_bank_accounts_read",
+    "cash_operations_bank_accounts_write",
+    "cash_operations_cash_operations_load",
+    "cash_operations_closings_read",
+    "cash_operations_closings_write",
+    "cash_operations_deposits_read",
+    "cash_operations_deposits_write",
+    "cash_operations_installation_company_country_currencies_read",
+    "cash_operations_installation_company_country_currencies_write",
+    "cash_operations_openings_read",
+    "cash_operations_openings_write",
+    "cash_operations_opening_statuses_read",
+    "cash_operations_opening_statuses_write",
+    "cash_operations_transference_types_read",
+    "cash_operations_transference_types_write"
   ],
   "session": {
     "installation_id": 207,
