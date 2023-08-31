@@ -352,7 +352,8 @@
     "cash_operations_opening_statuses_read",
     "cash_operations_opening_statuses_write",
     "cash_operations_transference_types_read",
-    "cash_operations_transference_types_write"
+    "cash_operations_transference_types_write",
+    "services_image_queries"
   ],
   "session": {
     "installation_id": 207,
