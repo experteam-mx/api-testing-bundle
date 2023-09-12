@@ -353,7 +353,9 @@
     "cash_operations_opening_statuses_write",
     "cash_operations_transference_types_read",
     "cash_operations_transference_types_write",
-    "services_image_queries"
+    "services_image_queries",
+    "catalogs_cancellation_reasons_read",
+    "catalogs_cancellation_reasons_write"
   ],
   "session": {
     "installation_id": 207,
