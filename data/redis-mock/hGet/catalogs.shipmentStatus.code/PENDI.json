@@ -1,0 +1,8 @@
+{
+  "id": 1,
+  "code": "PENDI",
+  "description": "Pending",
+  "isActive": true,
+  "createdAt": "2022-09-02T18:20:30+00:00",
+  "updatedAt": "2022-09-02T18:20:30+00:00"
+}
