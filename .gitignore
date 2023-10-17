@@ -22,4 +22,3 @@ phpunit.xml.dist
 /.config/
 /.local/
 /.bash_history
-
