@@ -355,7 +355,9 @@
     "cash_operations_transference_types_write",
     "services_image_queries",
     "catalogs_cancellation_reasons_read",
-    "catalogs_cancellation_reasons_write"
+    "catalogs_cancellation_reasons_write",
+    "catalogs_shipment_income_types_read",
+    "catalogs_shipment_income_types_write"
   ],
   "session": {
     "installation_id": 207,
