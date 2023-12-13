@@ -59,7 +59,7 @@ class MockRedis extends Redis
 
     public function hGet(string $key, string $member): mixed
     {
-        return $this->getValue(__FUNCTION__, $key, $hashKey);
+        return $this->getValue(__FUNCTION__, $key, $member);
     }
 
     public function hGetAll(string $key): Redis|array|false
