@@ -109,6 +109,40 @@ class RedisMock implements RedisMockInterface
         if (!empty($valueMap)) {
             $redisMock->method($method)
                 ->willReturnMap($valueMap);
+            $valueMap = [];
+        }
+
+        foreach ($redisData->getKeys() as $redisKey) {
+            $method = 'keys';
+            $key = $redisKey->pattern;
+            $value = json_decode($this->getValue($method, $key),true);
+
+            if ($value !== false) {
+                $valueMap[] = [$key, $value];
+            }
+        }
+
+        if (!empty($valueMap)) {
+            $redisMock->method($method)
+                ->willReturnMap($valueMap);
+            $valueMap = [];
+        }
+
+        foreach ($redisData->getIncr() as $redisIncr) {
+            $method = 'incr';
+            $key = $redisIncr->key;
+            $value = $this->getValue($method, $key);
+
+            if ($value !== false) {
+                $valueMap[] = [$key, (int)$value+1];
+            }
+        }
+
+        if (!empty($valueMap)) {
+            $redisMock->method($method)
+                ->willReturnMap($valueMap);
+
+
         }
     }
 }

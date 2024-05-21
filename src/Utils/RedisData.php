@@ -20,6 +20,16 @@ class RedisData
     private array $hgetall = [];
 
     /**
+     * @var RedisKeys[]
+     */
+    private array $keys = [];
+
+    /**
+     * @var RedisIncr[]
+     */
+    private array $incr = [];
+
+    /**
      * @return RedisGet[]
      */
     public function getGet(): array
@@ -68,5 +78,36 @@ class RedisData
     public function setHgetall(RedisHgetall ...$hgetall): void
     {
         $this->hgetall = $hgetall;
+    }
+
+    /**
+     * @return RedisKeys[]
+     */
+    public function getKeys(): array
+    {
+        return $this->keys;
+    }
+
+    /**
+     * @param RedisKeys ...$keys
+     * @return void
+     */
+    public function setKeys(RedisKeys ...$keys): void
+    {
+        $this->keys = $keys;
+    }
+
+    public function getIncr(): array
+    {
+        return $this->incr;
+    }
+
+    /**
+     * @param RedisIncr ...$incr
+     * @return void
+     */
+    public function setIncr(RedisIncr ...$incr): void
+    {
+        $this->incr = $incr;
     }
 }
