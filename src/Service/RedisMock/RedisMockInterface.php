@@ -7,10 +7,5 @@ use PHPUnit\Framework\MockObject\MockObject;
 
 interface RedisMockInterface
 {
-    /**
-     * @param MockObject $redisMock
-     * @param RedisData $redisData
-     * @return void
-     */
     public function init(MockObject $redisMock, RedisData $redisData): void;
 }
