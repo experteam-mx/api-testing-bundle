@@ -1,0 +1,9 @@
+{
+  "id": 132,
+  "code": "USD",
+  "name": "US Dollar",
+  "symbol": "&#36;",
+  "isActive": true,
+  "createdAt": "2020-11-13T22:45:40+00:00",
+  "updatedAt": "2022-02-25T16:48:35+00:00"
+}

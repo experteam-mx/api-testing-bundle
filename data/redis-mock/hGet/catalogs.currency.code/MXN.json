@@ -1,0 +1,9 @@
+{
+  "id": 88,
+  "code": "MXN",
+  "name": "Peso Mexicano",
+  "symbol": "&#36;",
+  "isActive": true,
+  "createdAt": "2020-11-13T22:45:40+00:00",
+  "updatedAt": "2023-09-07T04:49:58+00:00"
+}
