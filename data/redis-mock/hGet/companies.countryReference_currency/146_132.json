@@ -1,0 +1,14 @@
+{
+  "id": 1,
+  "country_id": 146,
+  "currency_id": 132,
+  "is_local": false,
+  "is_active": true,
+  "created_at": "2022-09-02T21:42:29.203000Z",
+  "updated_at": "2024-05-27T18:47:50.780000Z",
+  "can_transact": false,
+  "code": "USD",
+  "name": "D\u00f3lar Estadounidense",
+  "is_default": false,
+  "is_declared_insured": true
+}
