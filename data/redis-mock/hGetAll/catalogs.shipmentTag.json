@@ -1,0 +1,10 @@
+{
+	"6": "{\"id\":6,\"name\":\"Occurs\",\"code\":\"isOccurs\",\"createdAt\":\"2024-04-02T04:46:56+00:00\",\"updatedAt\":\"2024-04-02T04:46:56+00:00\",\"translations\":{\"name\":{\"EN\":\"Occurs\",\"ES\":\"Occurre\",\"FR\":\"Vers magasin\",\"PT\":\"Ocorre\"}}}",
+	"7": "{\"id\":7,\"name\":\"Outward\",\"code\":\"isOutward\",\"createdAt\":\"2024-04-02T04:46:56+00:00\",\"updatedAt\":\"2024-04-02T04:46:56+00:00\",\"translations\":{\"name\":{\"EN\":\"Outward\",\"ES\":\"Ida\",\"FR\":\"Aller\",\"PT\":\"Indo\"}}}",
+	"8": "{\"id\":8,\"name\":\"Return\",\"code\":\"isReturn\",\"createdAt\":\"2024-04-02T04:46:56+00:00\",\"updatedAt\":\"2024-04-02T04:46:56+00:00\",\"translations\":{\"name\":{\"EN\":\"Return\",\"ES\":\"Retorno\",\"FR\":\"Retour\",\"PT\":\"Retorno\"}}}",
+	"9": "{\"id\":9,\"name\":\"Kiosk\",\"code\":\"isKiosk\",\"createdAt\":\"2024-04-02T04:46:56+00:00\",\"updatedAt\":\"2024-04-02T04:46:56+00:00\",\"translations\":{\"name\":{\"EN\":\"Kiosk\",\"ES\":\"Kiosko\",\"FR\":\"Kiosque\",\"PT\":\"Quiosque\"}}}",
+	"10": "{\"id\":10,\"name\":\"Other origin\",\"code\":\"isOtherOrigin\",\"createdAt\":\"2024-04-02T04:46:56+00:00\",\"updatedAt\":\"2024-04-02T04:46:56+00:00\",\"translations\":{\"name\":{\"EN\":\"Other origin\",\"ES\":\"Otro origen\",\"FR\":\"Autre origine\",\"PT\":\"Outra origem\"}}}",
+	"11": "{\"id\":11,\"name\":\"Proforma\",\"code\":\"isProforma\",\"createdAt\":\"2024-04-02T04:46:56+00:00\",\"updatedAt\":\"2024-04-02T04:46:56+00:00\",\"translations\":{\"name\":{\"EN\":\"Proforma\",\"ES\":\"Proforma\",\"FR\":\"Proforma\",\"PT\":\"Proforma\"}}}",
+	"12": "{\"id\":12,\"name\":\"eMobile\",\"code\":\"eMobile\",\"createdAt\":\"2024-04-02T04:46:56+00:00\",\"updatedAt\":\"2024-04-02T04:46:56+00:00\",\"translations\":{\"name\":{\"EN\":\"eMobile\",\"ES\":\"eMobile\",\"FR\":\"eMobile\",\"PT\":\"eMobile\"}}}",
+	"13": "{\"id\":13,\"name\":\"Manual\",\"code\":\"isManual\",\"createdAt\":\"2024-04-02T04:46:56+00:00\",\"updatedAt\":\"2024-04-02T04:46:56+00:00\",\"translations\":{\"name\":{\"EN\":\"Manual\",\"ES\":\"Manual\",\"FR\":\"Manuel\",\"PT\":\"Manual\"}}}"
+}
