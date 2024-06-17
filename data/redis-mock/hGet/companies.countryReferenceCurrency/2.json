@@ -4,11 +4,11 @@
   "currency_id": 88,
   "is_local": true,
   "is_active": true,
-  "created_at": "2022-09-02T21:42:29.267000Z",
-  "updated_at": "2024-05-27T18:47:50.787000Z",
+  "created_at": "2022-02-10T22:43:41.157000Z",
+  "updated_at": "2024-05-31T23:45:16.953000Z",
   "can_transact": true,
   "code": "MXN",
-  "name": "D\u00f3lar Estadounidense",
+  "name": "Peso Mexicano",
   "is_default": true,
   "is_declared_insured": true
 }
