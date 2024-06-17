@@ -1,0 +1,19 @@
+{
+  "id": 8,
+  "code": "S",
+  "name": "SAMPLE",
+  "description": "Any shipment containing articles which are sent free of charge that have been marked or mutilated or otherwise made unsuitable for sale or use except as commercial samples, being shipped with the view of soliciting an order or as a mock-up to furthering an existing order from the foreign entity. In summary, the sample is free of charge and mutilated or made unusable for resale.",
+  "isActive": true,
+  "createdAt": "2022-09-02T18:22:35+00:00",
+  "updatedAt": "2022-09-02T23:48:55+00:00",
+  "translations": {
+    "name": {
+      "EN": "SAMPLE",
+      "ES": "MUESTRA"
+    },
+    "description": {
+      "EN": "Any shipment containing articles which are sent free of charge that have been marked or mutilated or otherwise made unsuitable for sale or use except as commercial samples, being shipped with the view of soliciting an order or as a mock-up to furthering an existing order from the foreign entity. In summary, the sample is free of charge and mutilated or made unusable for resale.",
+      "ES": "Cualquier envío que contenga artículos que se envíen sin cargo y que hayan sido marcados o mutilados o que se hayan hecho inadecuados para la venta o el uso, excepto como muestras comerciales, que se envíen con el fin de solicitar un pedido o como una maqueta para promover un pedido existente de la entidad extranjera. En resumen, la muestra es gratuita y está mutilada o inutilizada para su reventa."
+    }
+  }
+}

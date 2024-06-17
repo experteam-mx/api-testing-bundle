@@ -1,0 +1,19 @@
+{
+  "id": 12,
+  "code": "D",
+  "name": "DIPLOMATIC GOODS",
+  "description": "Shipment with legal protections for official correspondence or other items between a diplomatic mission and its home government or other diplomatic, consular, or otherwise official entity. Usually has lock and/or tamper-evident seal attached to it in order to deter or detect interference by unauthorized third parties. When externally marked to show its status, the \"bag\" has diplomatic immunity from search or seizure, as codified in article 27 of the 1961 Vienna Convention on Diplomatic Relations. It may only contain articles intended for official use.",
+  "isActive": false,
+  "createdAt": "2022-09-02T18:22:35+00:00",
+  "updatedAt": "2022-09-02T23:48:55+00:00",
+  "translations": {
+    "name": {
+      "EN": "DIPLOMATIC GOODS",
+      "ES": "BIENES DIPLOMÁTICOS"
+    },
+    "description": {
+      "EN": "Shipment with legal protections for official correspondence or other items between a diplomatic mission and its home government or other diplomatic, consular, or otherwise official entity. Usually has lock and/or tamper-evident seal attached to it in order to deter or detect interference by unauthorized third parties. When externally marked to show its status, the \"bag\" has diplomatic immunity from search or seizure, as codified in article 27 of the 1961 Vienna Convention on Diplomatic Relations. It may only contain articles intended for official use.",
+      "ES": "Envío con protección legal para correspondencia oficial u otros artículos entre una misión diplomática y su gobierno local u otra entidad diplomática, consular u otra entidad oficial. Por lo general, tiene un candado y/o un sello a prueba de manipulaciones adjunto para disuadir o detectar la interferencia de terceros no autorizados. Cuando se marca externamente para mostrar su estado, la \"bolsa\" tiene inmunidad diplomática de registro o incautación, según lo codificado en el artículo 27 de la Convención de Viena sobre Relaciones Diplomáticas de 1961. Sólo puede contener artículos destinados al uso oficial."
+    }
+  }
+}
