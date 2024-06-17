@@ -1,0 +1,19 @@
+{
+  "id": 13,
+  "code": "F",
+  "name": "DEFENCE MATERIAL",
+  "description": "Defence-related products. Shippers must demonstrate certification by authorities to transport shipment.",
+  "isActive": false,
+  "createdAt": "2022-09-02T18:22:35+00:00",
+  "updatedAt": "2022-09-02T23:48:55+00:00",
+  "translations": {
+    "name": {
+      "EN": "DEFENCE MATERIAL",
+      "ES": "MATERIAL DE DEFENSA"
+    },
+    "description": {
+      "EN": "Defence-related products. Shippers must demonstrate certification by authorities to transport shipment.",
+      "ES": "Productos relacionados con la defensa. Los remitentes deben demostrar la certificación de las autoridades para transportar el envío."
+    }
+  }
+}

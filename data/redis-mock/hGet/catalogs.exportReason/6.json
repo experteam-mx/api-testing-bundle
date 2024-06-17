@@ -1,0 +1,19 @@
+{
+  "id": 6,
+  "code": "C",
+  "name": "COMMERCIAL",
+  "description": "Same as Permanent Export - this infers final sale of commercial goods & services",
+  "isActive": true,
+  "createdAt": "2022-09-02T18:22:35+00:00",
+  "updatedAt": "2022-09-02T23:48:55+00:00",
+  "translations": {
+    "name": {
+      "EN": "COMMERCIAL",
+      "ES": "PROPÓSITO COMERCIAL/ VENTA"
+    },
+    "description": {
+      "EN": "Same as Permanent Export - this infers final sale of commercial goods & services",
+      "ES": "Igual que Exportación Permanente: esto infiere la venta final de bienes y servicios comerciales"
+    }
+  }
+}

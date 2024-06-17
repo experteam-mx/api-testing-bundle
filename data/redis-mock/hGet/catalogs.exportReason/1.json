@@ -1,0 +1,19 @@
+{
+  "id": 1,
+  "code": "P",
+  "name": "PERMANENT",
+  "description": "Permanent Export",
+  "isActive": false,
+  "createdAt": "2022-09-02T18:22:35+00:00",
+  "updatedAt": "2022-09-02T23:48:55+00:00",
+  "translations": {
+    "name": {
+      "EN": "PERMANENT",
+      "ES": "PERMANENTE"
+    },
+    "description": {
+      "EN": "Permanent Export",
+      "ES": "Exportación Permanente"
+    }
+  }
+}
