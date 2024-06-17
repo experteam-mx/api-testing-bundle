@@ -377,7 +377,7 @@
     "company_id": 2,
     "company_country_id": 2,
     "location_id": 740,
-    "country_reference_currency_id": 20,
+    "company_country_currency_id": 3,
     "location_employee_id": 6309
   },
   "role": {
