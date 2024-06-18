@@ -1,0 +1,8 @@
+{
+  "id": 1,
+  "name": "Solicitud del cliente",
+  "eventReasonCode": "RTSHR",
+  "isActive": true,
+  "createdAt": "2023-12-27T04:47:36+00:00",
+  "updatedAt": "2023-12-27T04:47:36+00:00"
+}
