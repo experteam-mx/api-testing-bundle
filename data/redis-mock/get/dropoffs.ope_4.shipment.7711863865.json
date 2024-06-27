@@ -1,0 +1,121 @@
+{
+  "retrieveFrom": "shipment-query",
+  "labeless": false,
+  "shipmentQueryAdv": false,
+  "trackingNumber": "7711863865",
+  "shipmentDate": {
+    "date": "2024-06-27T16:31:29",
+    "gmtOffset": "-04:00"
+  },
+  "deliveryDate": {
+    "typeCode": "QDDF",
+    "date": "2024-07-01T12:00:00",
+    "gmtOffset": "+00:00"
+  },
+  "results": 1,
+  "isDocument": false,
+  "scope": "Export",
+  "account": {
+    "number": "CASHPHX",
+    "isCash": true,
+    "countryCode": "US"
+  },
+  "description": "sdfsdf",
+  "reference": null,
+  "amount": {
+    "prePaid": 200.36,
+    "prePaidCurrency": "USD",
+    "insured": 0.0,
+    "insuredCurrency": "",
+    "declared": 5.0,
+    "declaredCurrency": "USD"
+  },
+  "weight": 5.0,
+  "weightUnit": "Lb",
+  "volumetricWeight": 0.899,
+  "volumetricWeightUnit": "Lb",
+  "product": {
+    "globalCode": "Y",
+    "localCode": "Y",
+    "globalName": "EXPRESS 12:00 - (TDY)",
+    "localName": "EXPRESS 12:00 - (TDY)",
+    "contentCode": "TDY"
+  },
+  "origin": {
+    "phoneNumber": "+1480-555-5555",
+    "mobileNumber": "",
+    "email": "diego.garrido@experteam.com.ec",
+    "postalCode": "77070",
+    "suburb": "DRS",
+    "city": "HOUSTON",
+    "countryCode": "US",
+    "countryName": "UNITED STATES OF AMERICA",
+    "businessName": "DIEGO",
+    "contactName": "Diego",
+    "addressLines": {
+      "1": "Address 1",
+      "2": "TX",
+      "3": "HOUSTON"
+    },
+    "facilityCode": "IA2",
+    "serviceAreaCode": "IAH"
+  },
+  "destination": {
+    "phoneNumber": "+495555 555",
+    "mobileNumber": "",
+    "email": "diego.garrido@experteam.com.ec",
+    "postalCode": "01877",
+    "suburb": "DRS",
+    "city": "DEMITZ-THUMITZ",
+    "countryCode": "DE",
+    "countryName": "GERMANY",
+    "businessName": "PAUL",
+    "contactName": "Paul",
+    "addressLines": {
+      "1": "Address 1",
+      "2": "SN",
+      "3": "DEMITZ-THUMITZ"
+    },
+    "facilityCode": "DRS",
+    "serviceAreaCode": "DRS"
+  },
+  "billing": {
+    "phoneNumber": "+1480-555-5555",
+    "mobileNumber": "",
+    "email": "diego.garrido@experteam.com.ec",
+    "postalCode": "77070",
+    "suburb": "DRS",
+    "city": "HOUSTON",
+    "countryCode": "US"
+  },
+  "packages": [
+    {
+      "trackingNumber": "JD014600004883356046",
+      "weight": 5.0,
+      "weightUnit": "LB",
+      "height": 5.0,
+      "heightUnit": "IN",
+      "depth": 5.0,
+      "depthUnit": "IN",
+      "width": 5.0,
+      "widthUnit": "IN"
+    }
+  ],
+  "transactionId": "007570c0-34ac-11ef-be23-3b28f55b6cea",
+  "services": [
+    "YK",
+    "FF",
+    "DS"
+  ],
+  "events": [
+    {
+      "checkpoint": "DP",
+      "remark": "DPSS [MEDIUM\/85]"
+    },
+    {
+      "checkpoint": "IA",
+      "remark": ""
+    }
+  ],
+  "isPLT": false
+}
