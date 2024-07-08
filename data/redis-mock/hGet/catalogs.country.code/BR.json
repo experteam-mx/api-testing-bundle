@@ -1,0 +1,71 @@
+{
+  "id": 28,
+  "code": "BR",
+  "name": "BRAZIL",
+  "locationType": {
+    "createdAt": "2020-11-13T22:45:37+00:00",
+    "updatedAt": "2020-11-13T22:45:37+00:00",
+    "id": 2,
+    "code": "CP",
+    "name": "City Postcode",
+    "isActive": true,
+    "priority": 2
+  },
+  "unit": {
+    "createdAt": "2020-11-13T22:45:37+00:00",
+    "updatedAt": "2022-03-14T22:00:21+00:00",
+    "id": 2,
+    "name": "Metric",
+    "weight": "kg",
+    "dimension": "cm",
+    "isActive": true
+  },
+  "timezone": "-03:00",
+  "hasImportService": false,
+  "isActive": true,
+  "isoCode": "BRA",
+  "codePhone": "+55",
+  "phoneDigits": null,
+  "locationTypeFields": {
+    "city": {
+      "enabled": true,
+      "required": true
+    },
+    "postalCode": {
+      "enabled": true,
+      "required": true
+    },
+    "suburb": {
+      "enabled": false,
+      "required": false
+    }
+  },
+  "postalCodeFormats": [
+    {
+      "id": 8,
+      "format": "99999",
+      "significantChars": 5,
+      "regex": "\/^[0-9][0-9][0-9][0-9][0-9]$\/",
+      "createdAt": "2024-01-17T05:37:23+00:00",
+      "updatedAt": "2024-01-17T05:37:23+00:00"
+    },
+    {
+      "id": 13,
+      "format": "99999999",
+      "significantChars": 5,
+      "regex": "\/^[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]$\/",
+      "createdAt": "2024-01-17T05:37:25+00:00",
+      "updatedAt": "2024-01-17T05:37:25+00:00"
+    }
+  ],
+  "createdAt": "2020-11-13T22:45:38+00:00",
+  "updatedAt": "2024-01-17T05:37:25+00:00",
+  "translations": {
+    "name": {
+      "EN": "BRAZIL",
+      "ES": "BRAZIL",
+      "FR": "BR\u00c9SIL",
+      "PT": "BRASIL"
+    }
+  }
+}
