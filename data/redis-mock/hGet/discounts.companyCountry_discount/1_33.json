@@ -1,0 +1,32 @@
+{
+  "id": 33,
+  "code": "UMN",
+  "company_country_id": 1,
+  "name": "UNAM",
+  "description": "UNAM",
+  "account_number": "CASHMX860",
+  "percentage": "15.00",
+  "start_date": "2020-06-01",
+  "end_date": "2025-12-31",
+  "start_weight": 0.1,
+  "end_weight": 50,
+  "shipment_scopes": [
+    2,
+    3
+  ],
+  "country_reference_products": [
+    9,
+    13,
+    14
+  ],
+  "applies_to_all_locations": true,
+  "locations": null,
+  "reference_required": true,
+  "reference_restriction": true,
+  "reference_restriction_period": 1,
+  "reference_restriction_amount": 2,
+  "reference_restriction_message": "LIMITE DE DESCUENTOS EXCEDIDO",
+  "is_active": true,
+  "created_at": "2024-06-18T15:39:36.413000Z",
+  "updated_at": "2024-06-18T15:39:37.183000Z"
+}
