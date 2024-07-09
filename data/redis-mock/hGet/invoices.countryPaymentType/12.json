@@ -1,0 +1,20 @@
+{
+  "id": 12,
+  "payment_type_id": 5,
+  "country_id": 213,
+  "name": "Credit Card",
+  "billing_payment_code": "28",
+  "can_tolerance": false,
+  "is_active": true,
+  "created_at": "2022-09-17T03:23:23.393000Z",
+  "updated_at": "2023-11-07T04:46:38.950000Z",
+  "code": "CC",
+  "translations": {
+    "name": {
+      "FR": "Credit Card",
+      "ES": "Credit Card",
+      "PT": "Credit Card",
+      "EN": "Credit Card"
+    }
+  }
+}

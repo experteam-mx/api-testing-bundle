@@ -1,0 +1,20 @@
+{
+  "id": 5,
+  "code": "credit_card",
+  "fields": {
+    "card": "string",
+    "number": "card_number",
+    "authorization": "string"
+  },
+  "created_at": "2021-07-25T15:02:21.903000Z",
+  "updated_at": "2023-04-19T06:04:49.430000Z",
+  "name": "Credit Card",
+  "translations": {
+    "name": {
+      "FR": "Carte de cr\u00e9dit",
+      "ES": "Tarjeta de Cr\u00e9dito",
+      "PT": "Credit Card",
+      "EN": "Credit Card"
+    }
+  }
+}
