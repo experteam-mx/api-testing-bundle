@@ -362,7 +362,8 @@
     "catalogs_unique_folios_write",
     "catalogs_generic_folios_read",
     "catalogs_generic_folios_write",
-    "shipments_shipments_manual_validation"
+    "shipments_shipments_manual_validation",
+    "shipments_shipments_term_condition_get"
   ],
   "session": {
     "installation_id": 207,
