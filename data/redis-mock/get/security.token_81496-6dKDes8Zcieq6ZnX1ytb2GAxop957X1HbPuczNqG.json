@@ -364,7 +364,8 @@
     "catalogs_generic_folios_write",
     "shipments_shipments_manual_validation",
     "shipments_shipments_term_condition_get",
-    "services_ereceipts"
+    "services_ereceipts",
+    "services_brutils_get"
   ],
   "session": {
     "installation_id": 207,
