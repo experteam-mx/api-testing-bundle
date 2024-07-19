@@ -363,7 +363,8 @@
     "catalogs_generic_folios_read",
     "catalogs_generic_folios_write",
     "shipments_shipments_manual_validation",
-    "shipments_shipments_term_condition_get"
+    "shipments_shipments_term_condition_get",
+    "services_ereceipts"
   ],
   "session": {
     "installation_id": 207,
