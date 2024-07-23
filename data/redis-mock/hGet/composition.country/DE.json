@@ -1,0 +1,29 @@
+{
+  "id": 50,
+  "code": "DE",
+  "name": "GERMANY",
+  "locationType": {
+    "createdAt": "2021-07-28T15:24:57+00:00",
+    "updatedAt": "2021-07-28T15:24:57+00:00",
+    "id": 2,
+    "code": "CP",
+    "name": "City Postcode",
+    "isActive": true,
+    "priority": 2
+  },
+  "unit": {
+    "createdAt": "2021-07-28T15:24:57+00:00",
+    "updatedAt": "2022-03-11T13:50:13+00:00",
+    "id": 2,
+    "name": "Metric",
+    "weight": "kg",
+    "dimension": "cm",
+    "isActive": true
+  },
+  "timezone": "+01:00",
+  "hasImportService": true,
+  "isActive": true,
+  "regions": null,
+  "zones": null,
+  "isoCode": "DEU"
+}

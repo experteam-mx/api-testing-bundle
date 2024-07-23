@@ -278,6 +278,7 @@
     "catalogs_trading_transaction_types_get_all",
     "catalogs_trading_transaction_types_get",
     "services_additional_shipment_data",
+    "inventories_package_reassign_positions_update",
     "inventories_package_incidents_get_all",
     "inventories_package_incidents_update",
     "customs_criteria_get_all",

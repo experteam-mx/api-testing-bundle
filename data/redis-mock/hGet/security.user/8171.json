@@ -1,0 +1,13 @@
+{
+    "id": 8171,
+    "name": "test unit",
+    "username": "testmx",
+    "model_type": "EMPLOYEE",
+    "model_id": 9133,
+    "is_active": true,
+    "created_at": "2024-04-15T21:25:03+00:00",
+    "updated_at": "2024-05-10T17:24:28+00:00",
+    "auth_type": "LOCAL",
+    "language_id": 1,
+    "email": "test@test.com"
+}
