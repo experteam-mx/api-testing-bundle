@@ -278,6 +278,7 @@
     "catalogs_trading_transaction_types_get_all",
     "catalogs_trading_transaction_types_get",
     "services_additional_shipment_data",
+    "inventories_package_reassign_positions_update",
     "inventories_package_incidents_get_all",
     "inventories_package_incidents_update",
     "customs_criteria_get_all",
@@ -353,7 +354,7 @@
     "company_id": 2,
     "company_country_id": 2,
     "location_id": 740,
-    "company_country_currency_id": 3,
+    "country_reference_currency_id": 20,
     "location_employee_id": 6309
   },
   "role": {
