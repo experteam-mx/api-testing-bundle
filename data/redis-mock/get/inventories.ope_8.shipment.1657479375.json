@@ -1,0 +1,149 @@
+{
+  "shipmentQueryAdv": false,
+  "trackingNumber": "1657479375",
+  "date": "2024-07-10T14:20:00",
+  "results": 1,
+  "isDocument": null,
+  "scope": "Export",
+  "accountNumber": "CASHPHX",
+  "description": "sdfsdf",
+  "reference": null,
+  "amount": 280.12,
+  "insuredAmount": 0.0,
+  "currency": "USD",
+  "weight": 15.0,
+  "weightUnit": "Lb",
+  "product": {
+    "globalCode": "P",
+    "localCode": "P",
+    "localName": "EXPRESS DOMESTIC",
+    "contentCode": "WPX"
+  },
+  "origin": {
+    "phoneNumber": "+1480-555-5555",
+    "email": "sdfsdf@dh.com",
+    "postalCode": "77070",
+    "suburb": "DRS",
+    "city": "HOUSTON",
+    "countryCode": "US",
+    "countryName": "UNITED STATES OF AMERICA",
+    "businessName": "DIEGO",
+    "contactName": "Diego",
+    "addressLines": {
+      "1": "Address 1",
+      "2": "TX",
+      "3": "HOUSTON"
+    },
+    "facilityCode": "IA2",
+    "serviceAreaCode": "IAH"
+  },
+  "destination": {
+    "phoneNumber": "+495555 555",
+    "email": "sdfsdf@dh.com",
+    "postalCode": "01877",
+    "suburb": "DRS",
+    "city": "DEMITZ-THUMITZ",
+    "countryCode": "DE",
+    "countryName": "GERMANY",
+    "businessName": "PAUL",
+    "contactName": "Paul",
+    "addressLines": {
+      "1": "Address 1",
+      "2": "SN",
+      "3": "DEMITZ-THUMITZ"
+    },
+    "facilityCode": "DRS",
+    "serviceAreaCode": "DRS"
+  },
+  "packages": [
+    {
+      "trackingNumber": "JD014600004887272900",
+      "weight": 2.25,
+      "height": 12.7,
+      "depth": 12.7,
+      "width": 12.7,
+      "events": [
+        {
+          "checkpoint": "CC",
+          "remark": "CONSIGNEE CONTACTED",
+          "date": "2024-07-10T14:20:57",
+          "gmtOffset": "-07:00"
+        },
+        {
+          "checkpoint": "OK",
+          "remark": "l",
+          "date": "2024-07-10T14:21:31",
+          "gmtOffset": "-07:00"
+        }
+      ]
+    },
+    {
+      "trackingNumber": "JD014600004887272901",
+      "weight": 2.25,
+      "height": 12.7,
+      "depth": 12.7,
+      "width": 12.7,
+      "events": []
+    },
+    {
+      "trackingNumber": "JD014600004887272902",
+      "weight": 2.25,
+      "height": 12.7,
+      "depth": 12.7,
+      "width": 12.7,
+      "events": [
+        {
+          "checkpoint": "OK",
+          "remark": "PAUL",
+          "date": "2024-07-10T19:11:31",
+          "gmtOffset": "-07:00"
+        },
+        {
+          "checkpoint": "CC",
+          "remark": "CONSIGNEE CONTACTED",
+          "date": "2024-07-10T14:21:47",
+          "gmtOffset": "-07:00"
+        }
+      ]
+    }
+  ],
+  "transactionId": "59970130-4a07-11ef-a304-8ff40152db58",
+  "events": [
+    {
+      "checkpoint": "IA",
+      "remark": "",
+      "date": "2024-07-10T14:20:11",
+      "gmtOffset": "-05:00"
+    },
+    {
+      "checkpoint": "CC",
+      "remark": "CONSIGNEE CONTACTED 0002",
+      "date": "2024-07-10T14:21:00",
+      "gmtOffset": "-07:00"
+    },
+    {
+      "checkpoint": "PD",
+      "remark": "PAUL 0001",
+      "date": "2024-07-10T19:11:00",
+      "gmtOffset": "-07:00"
+    },
+    {
+      "checkpoint": "ST",
+      "remark": "IMAGE PAPERWORK",
+      "date": "2024-07-11T01:14:02",
+      "gmtOffset": "-05:00"
+    },
+    {
+      "checkpoint": "DP",
+      "remark": "DPSS [MEDIUM\/85]",
+      "date": "2024-07-11T01:16:11",
+      "gmtOffset": "+08:00"
+    },
+    {
+      "checkpoint": "ST",
+      "remark": "INCOMPLETE SHIPMENT RECORD",
+      "date": "2024-07-11T01:21:02",
+      "gmtOffset": "-04:00"
+    }
+  ]
+}
