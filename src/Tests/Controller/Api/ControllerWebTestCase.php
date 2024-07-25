@@ -115,20 +115,22 @@ class ControllerWebTestCase extends WebTestCase
     /**
      * @param string $testClass
      * @param string $testFunction
-     * @param string $token
+     * @param string|null $token
+     * @param string|null $appKey
      * @return void
      */
-    protected function init(string $testClass, string $testFunction, ?string $token = '81496|6dKDes8Zcieq6ZnX1ytb2GAxop957X1HbPuczNqG', ?string $appkey = null): void
+    protected function init(string $testClass, string $testFunction, ?string $token = '81496|6dKDes8Zcieq6ZnX1ytb2GAxop957X1HbPuczNqG', ?string $appKey = null): void
     {
         $this->testClass = $testClass;
         $this->testFunction = $testFunction;
         $this->client = static::createClient();
         $serve = ['HTTP_HOST' => 'localhost:8080'];
 
-        if(!is_null($token))
+        if (!is_null($token)) {
             $serve['HTTP_AUTHORIZATION'] = "Bearer $token";
-        elseif (!is_null($appkey))
-            $serve['HTTP_APPKEY'] = $appkey;
+        } elseif (!is_null($appKey)) {
+            $serve['HTTP_APPKEY'] = $appKey;
+        }
 
         $this->client->setServerParameters($serve);
         $this->testContainer = $this->client->getContainer();
