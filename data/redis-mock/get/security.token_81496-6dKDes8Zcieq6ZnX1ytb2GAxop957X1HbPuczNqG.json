@@ -366,7 +366,10 @@
     "shipments_shipments_term_condition_get",
     "services_ereceipts",
     "services_brutils_get",
-    "services_signature"
+    "services_signature",
+    "catalogs_business_party_trader_types_post",
+    "catalogs_business_party_trader_types_update",
+    "catalogs_business_party_trader_types_disable"
   ],
   "session": {
     "installation_id": 207,
