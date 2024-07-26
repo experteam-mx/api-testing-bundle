@@ -1,0 +1,95 @@
+{
+  "shipmentQueryAdv": false,
+  "trackingNumber": "2075329745",
+  "date": "2024-05-28T18:33:02",
+  "results": 1,
+  "isDocument": null,
+  "scope": "Import",
+  "accountNumber": "965269748",
+  "description": "sdfdsfsdfdsf",
+  "reference": null,
+  "amount": 0.0,
+  "insuredAmount": 0.0,
+  "currency": "MXN",
+  "weight": 0.454,
+  "weightUnit": "Kg",
+  "product": {
+    "globalCode": "P",
+    "localCode": "S",
+    "localName": "EXPRESS DOMESTIC",
+    "contentCode": "WPX"
+  },
+  "origin": {
+    "phoneNumber": "495555555",
+    "email": "dechanelle.scott@dhl.com",
+    "postalCode": "01877",
+    "suburb": "PHX",
+    "city": "DEMITZ-THUMITZ",
+    "countryCode": "DE",
+    "countryName": "GERMANY",
+    "businessName": "SDFSDF",
+    "contactName": "sdfsf",
+    "addressLines": {
+      "1": "sdfsdf",
+      "2": "sdfsdf",
+      "3": "sdfsdf"
+    },
+    "facilityCode": "DRS",
+    "serviceAreaCode": "DRS"
+  },
+  "destination": {
+    "phoneNumber": "14805555555",
+    "email": "dechanelle.scott@dhl.com",
+    "postalCode": "85001",
+    "suburb": "PHX",
+    "city": "PHOENIX",
+    "countryCode": "US",
+    "countryName": "UNITED STATES OF AMERICA",
+    "businessName": "DERICK CARTER",
+    "contactName": "Derick Carter",
+    "addressLines": {
+      "1": "555 Barber Street",
+      "2": "Arizona AZ",
+      "3": "PHOENIX"
+    },
+    "facilityCode": "PHX",
+    "serviceAreaCode": "PHX"
+  },
+  "packages": [
+    {
+      "trackingNumber": "JD014600004874589516",
+      "weight": 0.454,
+      "height": 2.5,
+      "depth": 2.5,
+      "width": 2.5,
+      "events": []
+    }
+  ],
+  "transactionId": "ee2df728-4b82-11ef-a76a-472fb694a009",
+  "events": [
+    {
+      "checkpoint": "DP",
+      "remark": "DPSS [ZERO\/0]",
+      "date": "2024-05-28T18:33:04",
+      "gmtOffset": "+02:00"
+    },
+    {
+      "checkpoint": "ST",
+      "remark": "ODD - HANDOVER TO SERVICE POINT PHXPOS",
+      "date": "2024-05-28T21:29:09",
+      "gmtOffset": "-07:00"
+    },
+    {
+      "checkpoint": "ST",
+      "remark": "ODD - CHANGE OF ADDRESS - CHK INSTRUCTION",
+      "date": "2024-05-28T21:31:37",
+      "gmtOffset": "-07:00"
+    },
+    {
+      "checkpoint": "ST",
+      "remark": "ODD - HANDOVER TO SERVICE POINT PHXPOS",
+      "date": "2024-05-28T21:32:09",
+      "gmtOffset": "-07:00"
+    }
+  ]
+}
