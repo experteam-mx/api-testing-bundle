@@ -27,5 +27,6 @@
 	"management_area_id": null,
 	"queue_manager_enabled": false,
 	"facility_id": "PHL001",
-	"supervisor": null
+	"supervisor": null,
+	"service_point_id":"PHX"
 }
