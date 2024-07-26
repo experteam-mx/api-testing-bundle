@@ -376,7 +376,10 @@
     "catalogs_commodities_disable",
     "catalogs_countries_post",
     "catalogs_countries_update",
-    "catalogs_countries_disable"
+    "catalogs_countries_disable",
+    "catalogs_currencies_post",
+    "catalogs_currencies_update",
+    "catalogs_currencies_disable"
   ],
   "session": {
     "installation_id": 207,
