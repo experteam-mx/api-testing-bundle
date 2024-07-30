@@ -1,0 +1,23 @@
+{
+  "id": 0,
+  "name": "JAGUAR LOCKERS WEBAPP",
+  "username": "appkey_2",
+  "model_type": "APPKEY",
+  "model_id": 2,
+  "auth_type": "LOCAL",
+  "is_active": true,
+  "created_at": "2024-07-19T01:34:24.701211Z",
+  "updated_at": "2024-07-19T01:34:24.701221Z",
+  "permissions": [
+    "catalogs_holidays_get_all",
+    "catalogs_holidays_client_get_all",
+    "companies_parameters_values",
+    "services_emails",
+    "services_sms",
+    "lockers_operation"
+  ],
+  "session": null,
+  "language_id": null,
+  "email": null,
+  "role": null
+}
