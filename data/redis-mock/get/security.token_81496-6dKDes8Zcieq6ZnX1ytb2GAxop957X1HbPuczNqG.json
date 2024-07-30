@@ -379,7 +379,21 @@
     "catalogs_countries_disable",
     "catalogs_currencies_post",
     "catalogs_currencies_update",
-    "catalogs_currencies_disable"
+    "catalogs_currencies_disable",
+    "catalogs_document_functions_post",
+    "catalogs_document_functions_update",
+    "catalogs_document_functions_disable",
+    "catalogs_document_types_post",
+    "catalogs_document_types_update",
+    "catalogs_document_types_disable",
+    "catalogs_export_reasons_post",
+    "catalogs_export_reasons_update",
+    "catalogs_export_reasons_disable",
+    "catalogs_extracharges_post",
+    "catalogs_extracharges_update",
+    "catalogs_holidays_post",
+    "catalogs_holidays_update",
+    "catalogs_holidays_disable"
   ],
   "session": {
     "installation_id": 207,
