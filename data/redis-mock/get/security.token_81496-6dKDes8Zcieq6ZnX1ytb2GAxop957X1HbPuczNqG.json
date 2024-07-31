@@ -393,7 +393,10 @@
     "catalogs_extracharges_update",
     "catalogs_holidays_post",
     "catalogs_holidays_update",
-    "catalogs_holidays_disable"
+    "catalogs_holidays_disable",
+    "catalogs_identification_types_post",
+    "catalogs_identification_types_update",
+    "catalogs_identification_types_disable"
   ],
   "session": {
     "installation_id": 207,
