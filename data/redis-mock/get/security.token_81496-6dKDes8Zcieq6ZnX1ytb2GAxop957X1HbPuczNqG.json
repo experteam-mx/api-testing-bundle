@@ -396,7 +396,10 @@
     "catalogs_holidays_disable",
     "catalogs_identification_types_post",
     "catalogs_identification_types_update",
-    "catalogs_identification_types_disable"
+    "catalogs_identification_types_disable",
+    "catalogs_languages_post",
+    "catalogs_languages_update",
+    "catalogs_languages_disable"
   ],
   "session": {
     "installation_id": 207,
