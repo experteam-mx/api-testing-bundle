@@ -337,7 +337,8 @@
     "catalogs_questions_get_all",
     "catalogs_questions_get",
     "pickups_country_damaged_delivered_events_get_all",
-    "pickups_country_damaged_delivered_events_get"
+    "pickups_country_damaged_delivered_events_get",
+    "catalogs_restricted_states"
   ],
   "session": {
     "installation_id": 9,
