@@ -44,6 +44,7 @@
     "catalogs_postal_locations_get_all",
     "catalogs_postal_locations_get",
     "catalogs_postal_locations_tranctions_get",
+    "catalogs_postal_locations_post",
     "catalogs_products_get_all",
     "catalogs_products_get",
     "catalogs_products_post",
