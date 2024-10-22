@@ -1,0 +1,14 @@
+{
+  "id": 1,
+  "code": "FLE",
+  "name": "DHL Express",
+  "createdAt": "2023-04-19T05:45:33+00:00",
+  "updatedAt": "2023-09-07T04:50:05+00:00",
+  "translations": {
+    "name": {
+      "EN": "DHL Express",
+      "ES": "DHL Express",
+      "PT": "DHL Express"
+    }
+  }
+}
