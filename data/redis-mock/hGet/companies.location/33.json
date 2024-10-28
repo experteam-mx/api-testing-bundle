@@ -31,5 +31,6 @@
   "type": "retail",
   "facility_id": "MEXHMX",
   "supervisor": null,
-  "location_code": "AHM"
+  "location_code": "AHM",
+  "service_point_id": "AHM"
 }
