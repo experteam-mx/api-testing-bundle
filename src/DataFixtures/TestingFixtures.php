@@ -12,6 +12,7 @@ class TestingFixtures extends Fixture
     protected string $dataFileName = '';
     protected string $deserializeType = '';
     protected array $deserializeContext = [];
+    protected bool $oneFlush = true;
 
     public function __construct(
         private readonly ParameterBagInterface $parameterBag,
@@ -37,10 +38,16 @@ class TestingFixtures extends Fixture
 
                             if ($object instanceof $this->deserializeType) {
                                 $manager->persist($this->updateObject($object));
+
+                                if (!$this->oneFlush) {
+                                    $manager->flush();
+                                }
                             }
                         }
 
-                        $manager->flush();
+                        if ($this->oneFlush) {
+                            $manager->flush();
+                        }
                     }
                 }
             }
