@@ -6,6 +6,7 @@ use Experteam\ApiTestingBundle\Utils\Literal;
 use Experteam\ApiTestingBundle\Utils\RedisData;
 use Experteam\ApiTestingBundle\Utils\RedisGet;
 use Experteam\ApiTestingBundle\Utils\RedisHget;
+use Experteam\ApiTestingBundle\Utils\RedisHgetall;
 
 class BaseControllerWebTestCase extends ControllerWebTestCase
 {
@@ -16,6 +17,8 @@ class BaseControllerWebTestCase extends ControllerWebTestCase
     ];
 
     private array $redisHgetData = [];
+
+    private array $redisHgetallData = [];
 
     public function getBaseUri(): string
     {
@@ -45,6 +48,16 @@ class BaseControllerWebTestCase extends ControllerWebTestCase
     public function setRedisHgetData(array $redisHgetData): void
     {
         $this->redisHgetData = $redisHgetData;
+    }
+
+    public function getRedisHgetallData(): array
+    {
+        return $this->redisHgetallData;
+    }
+
+    public function setRedisHgetallData(array $redisHgetallData): void
+    {
+        $this->redisHgetallData = $redisHgetallData;
     }
 
     public function minUnitTest(string $testClass, string $testFunction, string $method, string $uri, bool $getRequest = false, array $keysAndTypes = [], bool $assertEqualPartialResponses = false, ?string $token = null, ?string $appKey = null, bool $getFiles = false): array
@@ -98,7 +111,7 @@ class BaseControllerWebTestCase extends ControllerWebTestCase
 
     public function mockRedis(): void
     {
-        $get = $hget = [];
+        $get = $hget = $hgetall = [];
 
         foreach ($this->redisGetData as $getData) {
             $redisGet = new RedisGet();
@@ -113,9 +126,16 @@ class BaseControllerWebTestCase extends ControllerWebTestCase
             $hget[] = $redisHget;
         }
 
+        foreach ($this->redisHgetallData as $hgetallData) {
+            $redisHgetall = new RedisHgetall();
+            $redisHgetall->key = $hgetallData[Literal::KEY];
+            $hgetall[] = $redisHgetall;
+        }
+
         $redisData = new RedisData();
         $redisData->setGet(...$get);
         $redisData->setHget(...$hget);
+        $redisData->setHgetall(...$hgetall);
         $this->setUseRedisMock($redisData);
     }
 
