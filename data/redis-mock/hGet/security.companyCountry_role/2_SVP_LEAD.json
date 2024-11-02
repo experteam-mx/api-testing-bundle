@@ -1,0 +1,19 @@
+{
+  "id": 12,
+  "name": "SVP LEAD",
+  "guard_name": "api",
+  "is_active": true,
+  "created_at": "2022-09-17T03:17:07+00:00",
+  "updated_at": "2023-11-14T03:44:43+00:00",
+  "company_country_id": 2,
+  "role_type_id": 4,
+  "code": "SVP_LEAD",
+  "role_type": {
+    "id": 4,
+    "level": 3,
+    "name": "Location",
+    "is_active": true,
+    "created_at": "2022-02-18T14:46:25.943000Z",
+    "updated_at": "2022-02-18T14:46:25.943000Z"
+  }
+}

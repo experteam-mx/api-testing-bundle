@@ -1,0 +1,10 @@
+{
+  "id": 2,
+  "company_id": 2,
+  "country_id": 213,
+  "headquarters_city_code": "",
+  "lp_code": "0",
+  "is_active": true,
+  "created_at": "2022-09-02T23:44:44.113000Z",
+  "updated_at": "2022-09-02T23:44:44.113000Z"
+}
