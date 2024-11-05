@@ -94,6 +94,20 @@ class RedisMock implements RedisMockInterface
             }
         }
 
+        foreach ($redisData->getExists() as $redisExists) {
+            $method = 'exists';
+            $key = $redisExists->key;
+            $value = $this->getValue($method, $key);
+
+            if ($value !== false) {
+                if (!isset($methodValueMap[$method])) {
+                    $methodValueMap[$method] = [];
+                }
+
+                $methodValueMap[$method][] = [$key, intval($value)];
+            }
+        }
+
         if (!empty($methodValueMap)) {
             foreach ($methodValueMap as $method => $valueMap) {
                 $redisMock->method($method)

@@ -30,6 +30,11 @@ class RedisData
     private array $incr = [];
 
     /**
+     * @var RedisExists[]
+     */
+    private array $exists = [];
+
+    /**
      * @return RedisGet[]
      */
     public function getGet(): array
@@ -97,6 +102,9 @@ class RedisData
         $this->keys = $keys;
     }
 
+    /**
+     * @return RedisIncr[]
+     */
     public function getIncr(): array
     {
         return $this->incr;
@@ -109,5 +117,22 @@ class RedisData
     public function setIncr(RedisIncr ...$incr): void
     {
         $this->incr = $incr;
+    }
+
+    /**
+     * @return RedisExists[]
+     */
+    public function getExists(): array
+    {
+        return $this->exists;
+    }
+
+    /**
+     * @param RedisExists ...$exists
+     * @return void
+     */
+    public function setExists(RedisExists ...$exists): void
+    {
+        $this->exists = $exists;
     }
 }
