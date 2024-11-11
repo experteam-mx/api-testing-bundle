@@ -455,7 +455,8 @@
     "catalogs_shipment_status_get",
     "catalogs_shipment_tags_get_all",
     "catalogs_shipment_tags_get",
-    "catalogs_postal_code_format_files_write"
+    "catalogs_postal_code_format_files_write",
+    "composition_country_references"
   ],
   "session": {
     "installation_id": 207,
