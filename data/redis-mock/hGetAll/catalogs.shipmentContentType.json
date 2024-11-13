@@ -1,0 +1,4 @@
+{
+  "1": "{\"id\":1,\"code\":\"DOCUMENT\",\"name\":\"Document\",\"isActive\":true,\"createdAt\":\"2020-11-13T22:45:37+00:00\",\"updatedAt\":\"2021-01-30T07:28:50+00:00\",\"translations\":{\"name\":{\"ES\":\"Documento\",\"FR\":\"Document\",\"PT\":\"Documento\"}}}",
+  "2": "{\"id\":2,\"code\":\"PACKAGE\",\"name\":\"Package\",\"isActive\":true,\"createdAt\":\"2020-11-13T22:45:37+00:00\",\"updatedAt\":\"2021-01-30T07:28:50+00:00\",\"translations\":{\"name\":{\"ES\":\"Paquete\",\"FR\":\"Emballer\",\"PT\":\"Pacote\"}}}"
+}

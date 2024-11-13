@@ -1,0 +1,5 @@
+{
+  "1": "{\"id\":1,\"name\":\"Import\",\"isActive\":true,\"createdAt\":\"2020-11-13T22:45:41+00:00\",\"updatedAt\":\"2021-01-30T07:28:48+00:00\",\"translations\":[]}",
+  "2": "{\"id\":2,\"name\":\"Export\",\"isActive\":true,\"createdAt\":\"2020-11-13T22:45:41+00:00\",\"updatedAt\":\"2021-01-30T07:28:48+00:00\",\"translations\":[]}",
+  "3": "{\"id\":3,\"name\":\"Domestic\",\"isActive\":true,\"createdAt\":\"2020-11-13T22:45:41+00:00\",\"updatedAt\":\"2021-01-30T07:28:48+00:00\",\"translations\":[]}"
+}

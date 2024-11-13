@@ -1,0 +1,4 @@
+{
+  "1": "{\"id\":1,\"code\":\"CREDIT\",\"name\":\"Credit\",\"isActive\":true,\"createdAt\":\"2020-11-13T22:45:37+00:00\",\"updatedAt\":\"2021-01-30T07:28:49+00:00\",\"translations\":{\"name\":{\"EN\":\"Credit\",\"ES\":\"Cr\\u00e9dito\",\"FR\":\"Cr\\u00e9dit\",\"PT\":\"Cr\\u00e9dito\"}}}",
+  "2": "{\"id\":2,\"code\":\"CASH\",\"name\":\"Cash\",\"isActive\":true,\"createdAt\":\"2020-11-13T22:45:37+00:00\",\"updatedAt\":\"2021-01-30T07:28:49+00:00\",\"translations\":{\"name\":{\"EN\":\"Cash\",\"ES\":\"Cash\",\"FR\":\"Comptant\",\"PT\":\"Dinheiro\"}}}"
+}
