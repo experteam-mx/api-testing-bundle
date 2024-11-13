@@ -339,7 +339,8 @@
     "pickups_country_damaged_delivered_events_get_all",
     "pickups_country_damaged_delivered_events_get",
     "catalogs_restricted_states",
-    "cash_operations_closings_write"
+    "cash_operations_closings_write",
+    "composition_shipments_emobiles"
   ],
   "session": {
     "installation_id": 9,
