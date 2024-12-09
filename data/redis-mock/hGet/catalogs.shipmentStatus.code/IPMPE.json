@@ -1,0 +1,16 @@
+{
+  "id": 6,
+  "code": "IPMPE",
+  "description": "Invoice, payment and manifest pending",
+  "isActive": true,
+  "createdAt": "2024-12-09T16:19:55+00:00",
+  "updatedAt": "2024-12-09T16:19:55+00:00",
+  "translations": {
+    "description": {
+      "EN": "Invoice, payment and manifest pending",
+      "ES": "Factura, pago y manifiesto pendientes",
+      "FR": "Facture, paiement et manifeste en attente",
+      "PT": "Fatura, pagamento e manifesto pendentes"
+    }
+  }
+}
