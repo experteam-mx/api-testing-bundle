@@ -1,0 +1,16 @@
+{
+  "id": 8,
+  "code": "IPPEN",
+  "description": "Invoice and payment pending",
+  "isActive": true,
+  "createdAt": "2024-12-09T16:19:55+00:00",
+  "updatedAt": "2024-12-09T16:19:55+00:00",
+  "translations": {
+    "description": {
+      "EN": "Invoice and payment pending",
+      "ES": "Factura y pago pendientes",
+      "FR": "Facture et paiement en attente",
+      "PT": "Fatura e pagamento pendentes"
+    }
+  }
+}
