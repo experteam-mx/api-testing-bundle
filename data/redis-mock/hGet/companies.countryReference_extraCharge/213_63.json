@@ -2,16 +2,9 @@
 	"id": 144,
 	"country_id": 213,
 	"extra_charge_id": 63,
-	"local_name": "Saturday Pickup",
-	"local_fixed_value": false,
-	"apply_local_rules": false,
-	"explicitly_request": true,
-	"recalculate_fuel_surcharge": true,
-	"required": false,
-	"selected": true,
-	"transmit_to_scl": true,
-	"apply_tax": false,
-	"condition_type": "NA",
+	"local_availability": false,
+	"mandatory": null,
+	"selected": null,
 	"shipment_scopes": [
 		1,
 		2,
@@ -21,6 +14,8 @@
 		1,
 		2
 	],
-	"created_at": "2022-09-02T23:56:47.307000Z",
-	"updated_at": "2022-09-02T23:56:47.307000Z"
+	"created_at": "2022-12-12T17:17:52.177000Z",
+	"updated_at": "2022-12-12T17:17:52.177000Z",
+	"value_local": null,
+	"value_usd": null
 }
