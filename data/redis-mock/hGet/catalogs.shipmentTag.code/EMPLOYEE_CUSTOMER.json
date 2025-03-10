@@ -1,0 +1,15 @@
+{
+    "id": 16,
+    "name": "Employee DHL",
+    "code": "EMPLOYEE_CUSTOMER",
+    "createdAt": "2025-02-28T17:30:21+00:00",
+    "updatedAt": "2025-02-28T17:30:21+00:00",
+    "translations": {
+        "name": {
+            "EN": "Employee DHL",
+            "ES": "Empleado DHL",
+            "FR": "Employ\u00e9 de DHL",
+            "PT": "Funcion\u00e1rio da DHL"
+        }
+    }
+}
