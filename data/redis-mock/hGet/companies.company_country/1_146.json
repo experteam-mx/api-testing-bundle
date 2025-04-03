@@ -1,0 +1,21 @@
+{
+  "id":1,
+  "company_id":1,
+  "country_id":146,
+  "headquarters_city_code":"MX",
+  "lp_code":"12345678",
+  "is_active":true,
+  "created_at":"2020-11-21T21:20:05.477000Z",
+  "updated_at":"2023-10-17T04:28:59.173000Z",
+  "contact_name":"Jennifer Thompson",
+  "contact_email":"Jennifer.A.Thompson@dhl.com",
+  "contact_phone_code":"+1",
+  "contact_phone_number":"(480) 636-2971",
+  "address1":"1910 W Rio Salado Pkwy",
+  "address2":null,
+  "address3":null,
+  "state":"AZ",
+  "city":"TEMPE",
+  "zip_code":"85281",
+  "county_name":null
+}

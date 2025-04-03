@@ -22,5 +22,6 @@
 		2
 	],
 	"created_at": "2022-11-18T16:59:38.917000Z",
-	"updated_at": "2022-11-18T16:59:38.917000Z"
+	"updated_at": "2022-11-18T16:59:38.917000Z",
+	"is_prepaid_dropoff": true
 }
