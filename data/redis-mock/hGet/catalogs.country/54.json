@@ -1,0 +1,54 @@
+{
+  "id": 54,
+  "code": "DO",
+  "name": "DOMINICAN REPUBLIC",
+  "locationType": {
+    "createdAt": "2020-11-13T22:45:37+00:00",
+    "updatedAt": "2020-11-13T22:45:37+00:00",
+    "id": 4,
+    "code": "S",
+    "name": "Suburb",
+    "isActive": true,
+    "priority": 2
+  },
+  "unit": {
+    "createdAt": "2020-11-13T22:45:37+00:00",
+    "updatedAt": "2022-03-14T22:00:21+00:00",
+    "id": 1,
+    "name": "Imperial",
+    "weight": "lb",
+    "dimension": "in",
+    "isActive": true
+  },
+  "timezone": "-04:00",
+  "hasImportService": true,
+  "isActive": true,
+  "isoCode": "DOM",
+  "codePhone": "+1809",
+  "phoneDigits": 10,
+  "locationTypeFields": {
+    "city": {
+      "enabled": true,
+      "required": true
+    },
+    "postalCode": {
+      "enabled": false,
+      "required": false
+    },
+    "suburb": {
+      "enabled": true,
+      "required": true
+    }
+  },
+  "postalCodeFormats": [],
+  "createdAt": "2020-11-13T22:45:38+00:00",
+  "updatedAt": "2023-09-07T04:50:01+00:00",
+  "translations": {
+    "name": {
+      "EN": "DOMINICAN REPUBLIC",
+      "ES": "REPÚBLICA DOMINICANA",
+      "FR": "RÉPUBLIQUE DOMINICAINE",
+      "PT": "REPÚBLICA DOMINICANA"
+    }
+  }
+}
