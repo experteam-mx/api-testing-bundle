@@ -1,0 +1,14 @@
+{
+  "id": 1614,
+  "country_id": 54,
+  "extra_charge_id": 8,
+  "local_availability": false,
+  "mandatory": null,
+  "selected": null,
+  "shipment_scopes": null,
+  "shipment_content_types": null,
+  "created_at": "2024-04-09T04:12:50.027000Z",
+  "updated_at": "2024-04-09T04:12:50.027000Z",
+  "value_local": null,
+  "value_usd": null
+}
