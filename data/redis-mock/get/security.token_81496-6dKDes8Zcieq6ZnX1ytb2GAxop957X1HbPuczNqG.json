@@ -457,7 +457,8 @@
     "catalogs_shipment_tags_get",
     "catalogs_postal_code_format_files_write",
     "composition_country_references",
-    "shipment_pending_invoice_payment"
+    "shipment_pending_invoice_payment",
+    "quotes_management"
   ],
   "session": {
     "installation_id": 207,
