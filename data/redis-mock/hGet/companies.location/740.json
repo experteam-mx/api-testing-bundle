@@ -28,5 +28,6 @@
 	"queue_manager_enabled": false,
 	"facility_id": "PHL001",
 	"supervisor": null,
+	"location_code": "PHX",
 	"service_point_id":"PHX"
 }
