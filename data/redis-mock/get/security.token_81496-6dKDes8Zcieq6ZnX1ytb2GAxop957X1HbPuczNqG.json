@@ -458,7 +458,9 @@
     "catalogs_postal_code_format_files_write",
     "composition_country_references",
     "shipment_pending_invoice_payment",
-    "quotes_management"
+    "quotes_management",
+    "cash_withdrawal_list",
+    "cash_withdrawal_generation"
   ],
   "session": {
     "installation_id": 207,
