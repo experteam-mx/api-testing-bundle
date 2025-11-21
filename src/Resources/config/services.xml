@@ -14,6 +14,7 @@
         <service id="Experteam\ApiTestingBundle\Service\TestData\TestDataInterface" alias="api_testing.test_data"/>
 
         <service id="Redis" class="Redis" public="true"/>
+        <service id="snc_redis.redis_stream_compute" class="Redis" public="true"/>
 
         <service id="api_testing.redis_mock" class="Experteam\ApiTestingBundle\Service\RedisMock\RedisMock" public="true">
             <argument key="$parameterBag" type="service" id="Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface"/>
