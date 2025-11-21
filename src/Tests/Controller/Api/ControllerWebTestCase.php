@@ -143,7 +143,7 @@ class ControllerWebTestCase extends WebTestCase
         } else {
             $redisMock = $this->createMock(Redis::class);
             $this->testContainer->get('api_testing.redis_mock')->init($redisMock, $this->redisData);
-            $this->testContainer->set('snc_redis.default', $redisMock);
+            $this->testContainer->set(Redis::class, $redisMock);
         }
     }
 
