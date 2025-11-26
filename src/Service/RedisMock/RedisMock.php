@@ -90,7 +90,7 @@ class RedisMock implements RedisMockInterface
                     $methodValueMap[$method] = [];
                 }
 
-                $methodValueMap[$method][] = [$key, intval($value) + 1];
+                $methodValueMap[$method][] = [$key, 1, intval($value) + 1];
             }
         }
 
