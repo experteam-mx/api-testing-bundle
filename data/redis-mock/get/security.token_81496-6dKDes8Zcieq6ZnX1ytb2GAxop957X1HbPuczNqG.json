@@ -460,7 +460,8 @@
     "shipment_pending_invoice_payment",
     "quotes_management",
     "cash_withdrawal_list",
-    "cash_withdrawal_generation"
+    "cash_withdrawal_generation",
+    "embassy_shipment"
   ],
   "session": {
     "installation_id": 207,
