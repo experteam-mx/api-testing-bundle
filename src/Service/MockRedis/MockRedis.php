@@ -9,9 +9,19 @@ use Symfony\Component\Filesystem\Filesystem;
 
 class MockRedis extends Redis
 {
+    /**
+     * @var string
+     */
     private string $filesDir;
+
+    /**
+     * @var Filesystem
+     */
     private Filesystem $filesystem;
 
+    /**
+     * @param ParameterBagInterface $parameterBag
+     */
     public function __construct(ParameterBagInterface $parameterBag)
     {
         parent::__construct();
@@ -19,11 +29,12 @@ class MockRedis extends Redis
         $this->filesDir = $parameterBag->get('kernel.project_dir') . '/vendor/experteam/api-testing-bundle/data/redis-mock';
     }
 
-    public function get(string $key): mixed
-    {
-        return $this->getValue(__FUNCTION__, $key);
-    }
-
+    /**
+     * @param string $function
+     * @param string $key
+     * @param string|null $hashKey
+     * @return string|false
+     */
     private function getValue(string $function, string $key, ?string $hashKey = null): string|false
     {
         $filePath = "{$this->filesDir}/$function/" . str_replace([':', '|'], ['_', '-'], $key);
@@ -41,18 +52,23 @@ class MockRedis extends Redis
         return file_get_contents($filePath);
     }
 
-    public function hGet(string $key, string $member): mixed
+    public function get($key)
     {
-        return $this->getValue(__FUNCTION__, $key, $member);
+        return $this->getValue(__FUNCTION__, $key);
     }
 
-    public function hGetAll(string $key): Redis|array|false
+    public function hGet($key, $hashKey)
+    {
+        return $this->getValue(__FUNCTION__, $key, $hashKey);
+    }
+
+    public function hGetAll($key)
     {
         $value = $this->getValue(__FUNCTION__, $key);
         return (($value === false) ? [] : json_decode($value, true));
     }
 
-    public function incr(string $key, int $by = 1): Redis|int|false
+    public function incr($key)
     {
         $dsn = new RedisDsn($_ENV['REDIS_URL'] ?? '');
         parent::connect($dsn->getHost(), $dsn->getPort(), 5, $dsn->getPersistentId(), 5, 5);
@@ -64,29 +80,26 @@ class MockRedis extends Redis
         $keys = json_decode($this->getValue(__FUNCTION__, __FUNCTION__), true)[__FUNCTION__] ?? [];
 
         return array_filter($keys, function ($k) use ($pattern) {
-            $pattern = preg_replace_callback('/([^*])/', function ($m) {
+            $pattern = preg_replace_callback('/([^*])/', function($m) {
                 return preg_quote($m[0], '/');
             }, $pattern);
             $pattern = str_replace('*', '.*', $pattern);
-            return (bool)preg_match('/^' . $pattern . '$/i', $k);
+            return (bool) preg_match('/^' . $pattern . '$/i', $k);
         });
     }
 
-    public function set(string $key, mixed $value, mixed $options = null): Redis|string|bool
+    public function set($key, $value, $timeout = null)
     {
         //Do nothing
-        return false;
     }
 
-    public function hSet(string $key, mixed ...$fields_and_vals): Redis|int|false
+    public function hSet($key, $hashKey, $value)
     {
         //Do nothing
-        return false;
     }
 
-    public function expire(string $key, int $timeout, ?string $mode = null): Redis|bool
+    public function expire($key, $ttl)
     {
         //Do nothing
-        return false;
     }
 }
