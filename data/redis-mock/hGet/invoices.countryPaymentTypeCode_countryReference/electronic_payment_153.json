@@ -1,0 +1,30 @@
+{
+  "id": 173,
+  "payment_type_id": 8,
+  "country_id": 153,
+  "name": "Electronic Payment",
+  "billing_payment_code": "",
+  "can_tolerance": false,
+  "is_active": false,
+  "created_at": "2025-04-01T05:45:55.697000Z",
+  "updated_at": "2025-04-01T05:45:55.697000Z",
+  "code": "PE",
+  "payment_type": {
+    "id": 8,
+    "code": "electronic_payment",
+    "fields": {
+      "authorization_number": "string"
+    },
+    "created_at": "2025-04-01T05:45:48.533000Z",
+    "updated_at": "2025-04-01T05:45:48.533000Z",
+    "name": "electronic_payment"
+  },
+  "translations": {
+    "name": {
+      "PT": "Electronic Payment",
+      "ES": "Pago Electr\u00f3nico",
+      "FR": "Electronic Payment",
+      "EN": "Electronic Payment"
+    }
+  }
+}
