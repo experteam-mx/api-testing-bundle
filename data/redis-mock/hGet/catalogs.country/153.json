@@ -1,0 +1,54 @@
+{
+  "id": 153,
+  "code": "NI",
+  "name": "NICARAGUA",
+  "locationType": {
+    "createdAt": "2020-11-13T22:45:37+00:00",
+    "updatedAt": "2020-11-13T22:45:37+00:00",
+    "id": 4,
+    "code": "S",
+    "name": "Suburb",
+    "isActive": true,
+    "priority": 2
+  },
+  "unit": {
+    "createdAt": "2020-11-13T22:45:37+00:00",
+    "updatedAt": "2022-03-14T22:00:21+00:00",
+    "id": 2,
+    "name": "Metric",
+    "weight": "kg",
+    "dimension": "cm",
+    "isActive": true
+  },
+  "timezone": "-06:00",
+  "hasImportService": true,
+  "isActive": true,
+  "isoCode": "NIC",
+  "codePhone": "+505",
+  "phoneDigits": 8,
+  "locationTypeFields": {
+    "city": {
+      "enabled": true,
+      "required": true
+    },
+    "postalCode": {
+      "enabled": false,
+      "required": false
+    },
+    "suburb": {
+      "enabled": true,
+      "required": true
+    }
+  },
+  "postalCodeFormats": [],
+  "createdAt": "2020-11-13T22:45:38+00:00",
+  "updatedAt": "2023-09-07T04:50:03+00:00",
+  "translations": {
+    "name": {
+      "EN": "NICARAGUA",
+      "ES": "NICARAGUA",
+      "FR": "NICARAGUA",
+      "PT": "NICARAGUA"
+    }
+  }
+}
