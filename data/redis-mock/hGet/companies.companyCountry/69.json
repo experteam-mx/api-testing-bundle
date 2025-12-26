@@ -1,0 +1,19 @@
+{
+  "id": 69,
+  "company_id": 2,
+  "country_id": 162,
+  "is_active": true,
+  "contact_email": "",
+  "contact_name": "",
+  "contact_phone_number": "",
+  "state": null,
+  "city": null,
+  "zip_code": null,
+  "address1": null,
+  "address2": null,
+  "address3": null,
+  "contact_phone_code": "+51",
+  "county_name": null,
+  "updated_at": "2025-10-23T20:53:36.749000Z",
+  "created_at": "2025-10-23T20:53:36.749000Z"
+}
