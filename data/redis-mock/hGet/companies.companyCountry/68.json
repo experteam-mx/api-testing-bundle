@@ -1,0 +1,21 @@
+{
+  "id": 68,
+  "company_id": 2,
+  "country_id": 153,
+  "headquarters_city_code": null,
+  "lp_code": null,
+  "is_active": true,
+  "created_at": "2025-02-25T06:28:18.317000Z",
+  "updated_at": "2025-02-25T06:28:18.317000Z",
+  "contact_name": "",
+  "contact_email": "",
+  "contact_phone_code": "+505",
+  "contact_phone_number": "",
+  "address1": null,
+  "address2": null,
+  "address3": null,
+  "state": null,
+  "city": null,
+  "zip_code": null,
+  "county_name": null
+}

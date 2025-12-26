@@ -1,0 +1,56 @@
+{
+  "name": "Belén Sánchez",
+  "model_type": "EMPLOYEE",
+  "model_id": 11557,
+  "is_active": true,
+  "auth_type": "LOCAL",
+  "language_id": 1,
+  "email": "belen.sanchez.ni@experteam.com.ec",
+  "id": 9408,
+  "username": "belenni",
+  "permissions": [
+    "billing_etool",
+    "mydhl_billing"
+  ],
+  "session": {
+    "model_type": "Installation",
+    "model_id": 4451,
+    "status": "OPENED",
+    "last_activity": "2025-12-26T12:35:56+00:00",
+    "user_agent": "Symfony HttpClient (Curl)",
+    "gmt_offset": "-06:00",
+    "opening_id": null,
+    "user_id": 9408,
+    "updated_at": "2025-12-26T12:35:56+00:00",
+    "created_at": "2025-12-26T12:35:56+00:00",
+    "id": 983961,
+    "installation_id": 4451,
+    "locale": null,
+    "decimal_point": 2,
+    "country_id": 153,
+    "company_id": 2,
+    "company_country_id": 68,
+    "location_id": 1419,
+    "country_reference_currency_id": 65,
+    "location_employee_id": 20933
+  },
+  "role": {
+    "id": 297,
+    "name": "FACTURACIÓN MYDHL+",
+    "guard_name": "api",
+    "is_active": true,
+    "created_at": "2025-04-01T04:33:43+00:00",
+    "updated_at": "2025-04-01T04:33:43+00:00",
+    "company_country_id": 68,
+    "role_type_id": 5,
+    "regional_country_id": null,
+    "role_type": {
+      "id": 5,
+      "level": 4,
+      "name": "Installation",
+      "is_active": true,
+      "created_at": "2022-02-18T14:46:25.943000Z",
+      "updated_at": "2022-02-18T14:46:25.943000Z"
+    }
+  }
+}
