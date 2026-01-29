@@ -8,9 +8,9 @@
   "viewSection": {
     "shipment": true,
     "pickup": true,
-    "employee_dhl": true,
+    "employeeDhl": true,
     "billing": true,
-    "customer_restriction": true
+    "customerRestriction": true
   },
   "regex": [],
   "isExternalValidation": false,
