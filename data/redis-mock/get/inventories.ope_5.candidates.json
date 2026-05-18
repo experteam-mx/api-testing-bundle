@@ -1,10 +1,27 @@
 [
   {
+    "inventoryDays": 679,
     "id": 1,
-    "packages": [
-      {
-        "id": 1
-      }
-    ]
+    "locationId": 740,
+    "shipmentId": 1,
+    "trackingNumber": "JD014600004885702188",
+    "shipmentTrackingNumber": "5048042440",
+    "destination": null,
+    "origin": null,
+    "inStock": true,
+    "canCheckOut": true,
+    "isExpired": true,
+    "isFirstMile": false,
+    "isMissing": false,
+    "isLastStockUpdateOperation": false,
+    "lastStatusCode": "VE",
+    "lastStatusName": "Vencido",
+    "lastOperationTypeCode": "VEN",
+    "lastOperationTypeName": "Vencimiento después de 7 días",
+    "checkInOperationTypeCode": "VEN",
+    "checkInOperationTypeName": "Vencimiento después de 7 días",
+    "lastCheckpointCode": null,
+    "createdAt": "2024-07-08T14:35:25+00:00",
+    "updatedAt": "2026-05-18T22:05:11+00:00"
   }
 ]
