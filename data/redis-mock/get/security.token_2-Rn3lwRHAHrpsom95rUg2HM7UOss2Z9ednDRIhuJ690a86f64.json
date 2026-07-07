@@ -46,7 +46,8 @@
     "role_permission_read",
     "parameter_read",
     "notification_read",
-    "signature_page_setting"
+    "signature_page_setting",
+    "manage_document_configuration"
   ],
   "session": null
 }
