@@ -49,7 +49,8 @@
     "cash_withdrawal_generation",
     "billing_shipments",
     "supply_inventory",
-    "inventory_re_rentry_missing_piece"
+    "inventory_re_rentry_missing_piece",
+    "inventory_on_hold_missed"
   ],
   "session": {
     "model_type": "Installation",

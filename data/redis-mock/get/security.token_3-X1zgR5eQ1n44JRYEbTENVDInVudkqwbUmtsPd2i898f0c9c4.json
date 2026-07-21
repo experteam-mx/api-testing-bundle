@@ -31,7 +31,8 @@
     "checkout_express",
     "pickup_operation",
     "pickup_era",
-    "inventory_re_rentry_missing_piece"
+    "inventory_re_rentry_missing_piece",
+    "inventory_on_hold_missed"
   ],
   "session": {
     "model_type": "Installation",
