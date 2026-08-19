@@ -27,7 +27,8 @@
     "supplies",
     "employee_administration",
     "account",
-    "domain_management_read"
+    "domain_management_read",
+    "inventory_control_configuration"
   ],
   "session": {
     "model_type": "Installation",
