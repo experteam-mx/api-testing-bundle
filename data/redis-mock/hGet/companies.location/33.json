@@ -30,6 +30,7 @@
   "commission_account": null,
   "type": "retail",
   "facility_id": "MEXHMX",
+  "state_code": null,
   "supervisor": null,
   "location_code": "AHM",
   "service_point_id": "AHM"
