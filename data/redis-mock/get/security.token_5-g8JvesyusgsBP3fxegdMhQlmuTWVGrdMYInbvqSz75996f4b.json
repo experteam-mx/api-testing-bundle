@@ -28,7 +28,8 @@
     "employee_administration",
     "account",
     "domain_management_read",
-    "inventory_control_configuration"
+    "inventory_control_configuration",
+    "holidays"
   ],
   "session": {
     "model_type": "Installation",

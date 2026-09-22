@@ -32,7 +32,8 @@
     "pickup_operation",
     "pickup_era",
     "inventory_re_rentry_missing_piece",
-    "inventory_on_hold_missed"
+    "inventory_on_hold_missed",
+    "inventory_stock_update"
   ],
   "session": {
     "model_type": "Installation",
